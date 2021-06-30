@@ -46,17 +46,17 @@ interface IndexPageProps {
     };
 }
 
-const CATEGORY_LIST = {
-    All: 5,
-    Web: 3,
-    Mobile: 2,
-};
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
 `;
+
+const CATEGORY_LIST = {
+    All: 5,
+    Web: 3,
+    Mobile: 2,
+};
 
 // const IndexPage: FunctionComponent<IndexPageProps> = function ({
 //     data: {
@@ -123,13 +123,38 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
             ? 'All'
             : parsed.category;
 
+    const categoryList = useMemo(
+        () =>
+            edges.reduce(
+                (
+                    list: CategoryListProps['categoryList'],
+                    {
+                        node: {
+                            frontmatter: { categories },
+                        },
+                    }: PostType,
+                ) => {
+                    categories.forEach(category => {
+                        if (list[category] === undefined) list[category] = 1;
+                        else list[category]++;
+                    });
+
+                    list['All']++;
+
+                    return list;
+                },
+                { All: 0 },
+            ),
+        [],
+    );
+
     return (
         <Container>
             <GlobalStyle />
             <Introduction profileImage={fluid} />
             <CategoryList
                 selectedCategory={selectedCategory}
-                categoryList={CATEGORY_LIST}
+                categoryList={categoryList}
             />
             <PostList posts={edges} />
             <Footer />
