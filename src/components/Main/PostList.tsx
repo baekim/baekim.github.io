@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useMemo } from 'react';
+import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
 import PostItem from 'components/Main/PostItem';
 import { FluidObject } from 'gatsby-image';
@@ -44,19 +44,9 @@ const PostList: FunctionComponent<PostListProps> = function ({
     selectedCategory,
     posts,
 }) {
-    const postListData = useMemo(
-        () =>
-            posts.filter(({ node: { frontmatter: { categories } } }: PostType) =>
-                selectedCategory !== 'All'
-                    ? categories.includes(selectedCategory)
-                    : true,
-            ),
-        [selectedCategory],
-    );
-
     return (
         <PostListWrapper>
-            {postListData.map(({ node: { id, frontmatter } }: PostType) => (
+            {posts.map(({ node: { id, frontmatter } }: PostType) => (
                 <PostItem
                     {...frontmatter}
                     link="<https://www.google.co.kr/>"
