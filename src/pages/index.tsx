@@ -23,6 +23,18 @@ interface IndexPageProps {
     };
 }
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+
+const CATEGORY_LIST = {
+    All: 5,
+    Web: 3,
+    Mobile: 2,
+};
+
 const IndexPage: FunctionComponent<IndexPageProps> = function ({
     location: { search },
     data: {
