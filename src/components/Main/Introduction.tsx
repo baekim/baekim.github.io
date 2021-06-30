@@ -1,8 +1,12 @@
 import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
-import ProfileImage from 'components/Main/ProfileImage';
+import ProfileImage, { ProfileImageProps } from 'components/Main/ProfileImage';
 
 type IntroductionProps = ProfileImageProps;
+
+// interface IntroductionProps {
+//     profileImage: any;
+// }
 
 const Background = styled.div`
   width: 100%;
@@ -71,7 +75,7 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({
 
                 <div>
                     <SubTitle>Nice to Meet You,</SubTitle>
-                    <Title>I'm a Data Analyst and Developer Ben.</Title>
+                    <Title>I'm Junior Frontend Developer Hyun.</Title>
                 </div>
             </Wrapper>
         </Background>
