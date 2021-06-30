@@ -2,6 +2,8 @@ import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
 import ProfileImage from 'components/Main/ProfileImage';
 
+type IntroductionProps = ProfileImageProps;
+
 const Background = styled.div`
   width: 100%;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -43,14 +45,33 @@ const Title = styled.div`
   }
 `;
 
-const Introduction: FunctionComponent = function () {
+// const Introduction: FunctionComponent = function () {
+//     return (
+//         <Background>
+//             <Wrapper>
+//                 <ProfileImage />
+//                 <div>
+//                     <SubTitle>Nice to Meet You,</SubTitle>
+//                     <Title>I'm a Data Analyst and Developer.</Title>
+//                 </div>
+//             </Wrapper>
+//         </Background>
+//     );
+// };
+
+// export default Introduction;
+
+const Introduction: FunctionComponent<IntroductionProps> = function ({
+    profileImage,
+}) {
     return (
         <Background>
             <Wrapper>
-                <ProfileImage />
+                <ProfileImage profileImage={profileImage} />
+
                 <div>
                     <SubTitle>Nice to Meet You,</SubTitle>
-                    <Title>I'm a Data Analyst and Developer.</Title>
+                    <Title>I'm a Data Analyst and Developer Ben.</Title>
                 </div>
             </Wrapper>
         </Background>

@@ -1,15 +1,26 @@
 import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
+import Img, { FluidObject } from 'gatsby-image';
 
 interface PostItemProps {
     title: string;
     date: string;
     categories: string[];
     summary: string;
-    thumbnail: string;
+    thumbnail: {
+        childImageSharp: {
+            fluid: FluidObject;
+        };
+    };
     link: string;
 }
+
+const ThumbnailImage = styled(Img)`
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+`;
 
 const PostItemWrapper = styled(Link)`
   display: flex;
@@ -22,13 +33,6 @@ const PostItemWrapper = styled(Link)`
   &:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
-`;
-
-const ThumbnailImage = styled.img`
-  width: 100%;
-  height: 200px;
-  border-radius: 10px 10px 0 0;
-  object-fit: cover;
 `;
 
 const PostItemContent = styled.div`
@@ -92,19 +96,21 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
     date,
     categories,
     summary,
-    thumbnail,
+    thumbnail: {
+        childImageSharp: { fluid },
+    },
     link,
 }) {
     return (
         <PostItemWrapper to={link}>
-            <ThumbnailImage src={thumbnail} alt="Post Item Image" />
+            <ThumbnailImage fluid={fluid} alt="Post Item Image" />
 
             <PostItemContent>
                 <Title>{title}</Title>
                 <Date>{date}</Date>
                 <Category>
-                    {categories.map(category => (
-                        <CategoryItem key={category}>{category}</CategoryItem>
+                    {categories.map(item => (
+                        <CategoryItem key={item}>{item}</CategoryItem>
                     ))}
                 </Category>
                 <Summary>{summary}</Summary>

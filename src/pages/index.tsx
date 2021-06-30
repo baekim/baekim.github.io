@@ -4,28 +4,13 @@ import GlobalStyle from 'components/Common/GlobalStyle';
 import Footer from 'components/Common/Footer';
 import CategoryList from 'components/Main/CategoryList';
 import Introduction from 'components/Main/Introduction';
-import PostList from 'components/Main/PostList';
+import PostList, { PostType } from 'components/Main/PostList';
 import { graphql } from 'gatsby';
 
 interface IndexPageProps {
     data: {
         allMarkdownRemark: {
-            edges: [
-                {
-                    node: {
-                        id: string;
-                        frontmatter: {
-                            title: string;
-                            summary: string;
-                            date: string;
-                            categories: string[];
-                            thumbnail: {
-                                publicURL: string;
-                            };
-                        };
-                    };
-                },
-            ];
+            edges: PostType[];
         };
     };
 }
@@ -52,7 +37,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
             <GlobalStyle />
             <Introduction />
             <CategoryList selectedCategory="Web" categoryList={CATEGORY_LIST} />
-            <PostList />
+            <PostList posts={edges} />
             <Footer />
         </Container>
     );
@@ -74,7 +59,16 @@ export const queryPostList = graphql`
             date(formatString: "YYYY.MM.DD.")
             categories
             thumbnail {
-              publicURL
+              childImageSharp {
+                fluid(
+                  maxWidth: 768
+                  maxHeight: 200
+                  fit: INSIDE
+                  quality: 100
+                ) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
             }
           }
         }
