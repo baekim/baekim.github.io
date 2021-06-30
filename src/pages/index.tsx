@@ -156,7 +156,7 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
                 selectedCategory={selectedCategory}
                 categoryList={categoryList}
             />
-            <PostList posts={edges} />
+            <PostList selectedCategory={selectedCategory} posts={edges} />
             <Footer />
         </Container>
     );
