@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://baekim.github.io/sitemap/sitemap-index.xml
+Host: https://baekim.github.io
