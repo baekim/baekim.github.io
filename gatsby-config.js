@@ -15,6 +15,12 @@ module.exports = {
     },
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-sitemap',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: <https://gatsby.dev/offline>
+    // `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -22,8 +28,20 @@ module.exports = {
         path: `${__dirname}/contents`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: '<https://my-website.com/>',
+        stripQueryString: true,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -57,27 +75,6 @@ module.exports = {
             options: {
               target: '_blank',
               rel: 'nofollow',
-            },
-          },
-          {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-              name: `contents`,
-              path: `${__dirname}/contents`,
-            },
-          },
-          {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-              name: `images`,
-              path: `${__dirname}/static`,
-            },
-          },
-          {
-            resolve: 'gatsby-plugin-canonical-urls',
-            options: {
-              siteUrl: '<https://my-website.com/>',
-              stripQueryString: true,
             },
           },
         ],
