@@ -23,18 +23,6 @@ interface IndexPageProps {
     };
 }
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-`;
-
-const CATEGORY_LIST = {
-    All: 5,
-    Web: 3,
-    Mobile: 2,
-};
-
 const IndexPage: FunctionComponent<IndexPageProps> = function ({
     location: { search },
     data: {
@@ -76,16 +64,14 @@ const IndexPage: FunctionComponent<IndexPageProps> = function ({
     );
 
     return (
-        <Container>
-            <GlobalStyle />
+        <Template>
             <Introduction profileImage={fluid} />
             <CategoryList
                 selectedCategory={selectedCategory}
                 categoryList={categoryList}
             />
             <PostList selectedCategory={selectedCategory} posts={edges} />
-            <Footer />
-        </Container>
+        </Template>
     );
 };
 
