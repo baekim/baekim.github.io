@@ -31,6 +31,7 @@ const Wrapper = styled.div`
 `;
 
 const SubTitle = styled.div`
+  font-family: Arial, serif;
   font-size: 20px;
   font-weight: 400;
 
@@ -41,6 +42,7 @@ const SubTitle = styled.div`
 
 const Title = styled.div`
   margin-top: 5px;
+  font-family: Arial;
   font-size: 35px;
   font-weight: 700;
 
@@ -49,37 +51,21 @@ const Title = styled.div`
   }
 `;
 
-// const Introduction: FunctionComponent = function () {
-//     return (
-//         <Background>
-//             <Wrapper>
-//                 <ProfileImage />
-//                 <div>
-//                     <SubTitle>Nice to Meet You,</SubTitle>
-//                     <Title>I'm a Data Analyst and Developer.</Title>
-//                 </div>
-//             </Wrapper>
-//         </Background>
-//     );
-// };
-
-// export default Introduction;
-
 const Introduction: FunctionComponent<IntroductionProps> = function ({
-    profileImage,
+  profileImage,
 }) {
-    return (
-        <Background>
-            <Wrapper>
-                <ProfileImage profileImage={profileImage} />
+  return (
+    <Background>
+      <Wrapper>
+        <ProfileImage profileImage={profileImage} />
 
-                <div>
-                    <SubTitle>Nice to Meet You,</SubTitle>
-                    <Title>I'm Junior Frontend Developer Hyun.</Title>
-                </div>
-            </Wrapper>
-        </Background>
-    );
+        <div>
+          <SubTitle>Tech Blog by</SubTitle>
+          <Title>A Data Analyst / Developer</Title>
+        </div>
+      </Wrapper>
+    </Background>
+  );
 };
 
 export default Introduction;
