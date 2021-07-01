@@ -3,7 +3,7 @@ module.exports = {
     title: `Tech blog by Ben`,
     description: `Data Analytics && Delveopment`,
     author: `Ben`,
-    siteUrl: '<https://my-website-link.com>', // 배포 후 변경 예정
+    siteUrl: 'https://baekim.github.io/', // 배포 후 변경 예정
   },
   plugins: [
     {
@@ -38,7 +38,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: '<https://my-website.com/>',
+        siteUrl: 'https://baekim.github.io/',
         stripQueryString: true,
       },
     },
