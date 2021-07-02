@@ -4,17 +4,17 @@ import PostHeadInfo, { PostHeadInfoProps } from 'components/Post/PostHeadInfo';
 import Img, { FluidObject } from 'gatsby-image';
 
 type GatsbyImgProps = {
-    fluid: FluidObject;
-    alt: string;
-    className?: string;
+  fluid: FluidObject;
+  alt: string;
+  className?: string;
 };
 
 export interface PostHeadProps extends PostHeadInfoProps {
-    thumbnail: {
-        childImageSharp: {
-            fluid: FluidObject;
-        };
+  thumbnail: {
+    childImageSharp: {
+      fluid: FluidObject;
     };
+  };
 }
 const PostHeadWrapper = styled.div`
   position: relative;
@@ -27,7 +27,7 @@ const PostHeadWrapper = styled.div`
 `;
 
 const BackgroundImage = styled((props: GatsbyImgProps) => (
-    <Img {...props} style={{ position: 'absolute' }} />
+  <Img {...props} style={{ position: 'absolute' }} />
 ))`
   z-index: -1;
   width: 100%;
@@ -83,6 +83,7 @@ const Title = styled.div`
   white-space: normal;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  font-family: Arial;
   font-size: 45px;
   font-weight: 800;
 
@@ -96,6 +97,7 @@ const PostData = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  font-family: Arial;
   font-size: 18px;
   font-weight: 700;
 
@@ -108,19 +110,19 @@ const PostData = styled.div`
 `;
 
 const PostHead: FunctionComponent<PostHeadProps> = function ({
-    title,
-    date,
-    categories,
-    thumbnail: {
-        childImageSharp: { fluid },
-    },
+  title,
+  date,
+  categories,
+  thumbnail: {
+    childImageSharp: { fluid },
+  },
 }) {
-    return (
-        <PostHeadWrapper>
-            <BackgroundImage fluid={fluid} alt="thumbnail" />
-            <PostHeadInfo title={title} date={date} categories={categories} />
-        </PostHeadWrapper>
-    );
+  return (
+    <PostHeadWrapper>
+      <BackgroundImage fluid={fluid} alt="thumbnail" />
+      <PostHeadInfo title={title} date={date} categories={categories} />
+    </PostHeadWrapper>
+  );
 };
 
 export default PostHead;

@@ -4,13 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 export interface PostHeadInfoProps {
-    title: string;
-    date: string;
-    categories: string[];
+  title: string;
+  date: string;
+  categories: string[];
 }
 
 const PostHeadInfoWrapper = styled.div`
   display: flex;
+  font-family: Arial;
   flex-direction: column;
   width: 768px;
   height: 100%;
@@ -41,6 +42,7 @@ const Title = styled.div`
   white-space: normal;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  font-family: Arial;
   font-size: 45px;
   font-weight: 800;
 `;
@@ -50,29 +52,30 @@ const PostData = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  font-family: Arial;
   font-size: 18px;
   font-weight: 700;
 `;
 
 const PostHeadInfo: FunctionComponent<PostHeadInfoProps> = function ({
-    title,
-    date,
-    categories,
+  title,
+  date,
+  categories,
 }) {
-    const goBackPage = () => window.history.back();
+  const goBackPage = () => window.history.back();
 
-    return (
-        <PostHeadInfoWrapper>
-            <PrevPageIcon onClick={goBackPage}>
-                <FontAwesomeIcon icon={faArrowLeft} />
-            </PrevPageIcon>
-            <Title>{title}</Title>
-            <PostData>
-                <div>{categories.join(' / ')}</div>
-                <div>{date}</div>
-            </PostData>
-        </PostHeadInfoWrapper>
-    );
+  return (
+    <PostHeadInfoWrapper>
+      <PrevPageIcon onClick={goBackPage}>
+        <FontAwesomeIcon icon={faArrowLeft} />
+      </PrevPageIcon>
+      <Title>{title}</Title>
+      <PostData>
+        <div style={{ fontFamily: 'Arial' }}>{categories.join(' / ')}</div>
+        <div style={{ fontFamily: 'Arial' }}>{date}</div>
+      </PostData>
+    </PostHeadInfoWrapper>
+  );
 };
 
 export default PostHeadInfo;
