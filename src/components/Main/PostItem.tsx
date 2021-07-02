@@ -4,16 +4,16 @@ import { Link } from 'gatsby';
 import Img, { FluidObject } from 'gatsby-image';
 
 interface PostItemProps {
-    title: string;
-    date: string;
-    categories: string[];
-    summary: string;
-    thumbnail: {
-        childImageSharp: {
-            fluid: FluidObject;
-        };
+  title: string;
+  date: string;
+  categories: string[];
+  summary: string;
+  thumbnail: {
+    childImageSharp: {
+      fluid: FluidObject;
     };
-    link: string;
+  };
+  link: string;
 }
 
 const ThumbnailImage = styled(Img)`
@@ -40,6 +40,7 @@ const PostItemContent = styled.div`
   display: flex;
   flex-direction: column;
   padding: 15px;
+  font-family: Arial;
 `;
 
 const Title = styled.div`
@@ -53,16 +54,19 @@ const Title = styled.div`
   -webkit-box-orient: vertical;
   font-size: 20px;
   font-weight: 700;
+  font-family: Arial;
 `;
 
 const Date = styled.div`
   font-size: 14px;
   font-weight: 400;
+  font-family: Arial;
   opacity: 0.7;
 `;
 
 const Category = styled.div`
   display: flex;
+  font-family: Arial;
   flex-wrap: wrap;
   margin-top: 10px;
   margin: 10px -5px;
@@ -73,6 +77,7 @@ const CategoryItem = styled.div`
   padding: 3px 5px;
   border-radius: 3px;
   background: black;
+  font-family: Arial;
   font-size: 14px;
   font-weight: 700;
   color: white;
@@ -87,36 +92,37 @@ const Summary = styled.div`
   overflow-wrap: break-word;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  font-family: Arial;
   font-size: 16px;
   opacity: 0.8;
 `;
 
 const PostItem: FunctionComponent<PostItemProps> = function ({
-    title,
-    date,
-    categories,
-    summary,
-    thumbnail: {
-        childImageSharp: { fluid },
-    },
-    link,
+  title,
+  date,
+  categories,
+  summary,
+  thumbnail: {
+    childImageSharp: { fluid },
+  },
+  link,
 }) {
-    return (
-        <PostItemWrapper to={link}>
-            <ThumbnailImage fluid={fluid} alt="Post Item Image" />
+  return (
+    <PostItemWrapper to={link}>
+      <ThumbnailImage fluid={fluid} alt="Post Item Image" />
 
-            <PostItemContent>
-                <Title>{title}</Title>
-                <Date>{date}</Date>
-                <Category>
-                    {categories.map(item => (
-                        <CategoryItem key={item}>{item}</CategoryItem>
-                    ))}
-                </Category>
-                <Summary>{summary}</Summary>
-            </PostItemContent>
-        </PostItemWrapper>
-    );
+      <PostItemContent>
+        <Title>{title}</Title>
+        <Date>{date}</Date>
+        <Category>
+          {categories.map(item => (
+            <CategoryItem key={item}>{item}</CategoryItem>
+          ))}
+        </Category>
+        <Summary>{summary}</Summary>
+      </PostItemContent>
+    </PostItemWrapper>
+  );
 };
 
 export default PostItem;

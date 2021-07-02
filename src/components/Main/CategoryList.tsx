@@ -38,8 +38,9 @@ const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
 )) <CategoryItemProps>`
   margin-right: 20px;
   padding: 5px 0;
-  font-size: 18px;
-  font-weight: ${({ active }) => (active ? '800' : '400')};
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: ${({ active }) => (active ? '600' : '400')};
   cursor: pointer;
 
   &:last-of-type {
@@ -47,7 +48,7 @@ const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
   }
 
   @media (max-width: 768px) {
-    font-size: 15px;
+    font-size: 16px;
   }
 `;
 

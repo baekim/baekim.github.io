@@ -2,11 +2,12 @@ import React, { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
 
 interface PostContentProps {
-    html: string;
+  html: string;
 }
 
 const MarkdownRenderer = styled.div`
   // Renderer Style
+  font-family: Arial;
   display: flex;
   flex-direction: column;
   width: 768px;
@@ -16,11 +17,13 @@ const MarkdownRenderer = styled.div`
 
   // Markdown Style
   line-height: 1.8;
+  font-family: Arial;
   font-size: 16px;
   font-weight: 400;
 
   // Apply Padding Attribute to All Elements
   p {
+    font-family: Arial;
     padding: 3px 0;
   }
 
@@ -28,6 +31,7 @@ const MarkdownRenderer = styled.div`
   h1,
   h2,
   h3 {
+    font-family: Arial;
     font-weight: 800;
     margin-bottom: 30px;
   }
@@ -45,14 +49,17 @@ const MarkdownRenderer = styled.div`
   }
 
   h1 {
+    font-family: Arial;
     font-size: 30px;
   }
 
   h2 {
+    font-family: Arial;
     font-size: 25px;
   }
 
   h3 {
+    font-family: Arial;
     font-size: 20px;
   }
 
@@ -61,12 +68,14 @@ const MarkdownRenderer = styled.div`
     margin: 30px 0;
     padding: 5px 15px;
     border-left: 2px solid #000000;
+    font-family: Arial;
     font-weight: 800;
   }
 
   // Adjust List Element Style
   ol,
   ul {
+    font-family: Arial;
     margin-left: 20px;
     padding: 30px 0;
   }
@@ -79,6 +88,7 @@ const MarkdownRenderer = styled.div`
 
   // Adjust Link Element Style
   a {
+    font-family: Arial;
     color: #4263eb;
     text-decoration: underline;
   }
@@ -87,6 +97,7 @@ const MarkdownRenderer = styled.div`
   pre[class*='language-'] {
     margin: 30px 0;
     padding: 15px;
+    font-family: Arial;
     font-size: 15px;
 
     ::-webkit-scrollbar-thumb {
@@ -105,17 +116,21 @@ const MarkdownRenderer = styled.div`
     width: 100%;
     padding: 80px 20px;
     line-height: 1.6;
+    font-family: Arial;
     font-size: 14px;
 
     h1 {
+      font-family: Arial;
       font-size: 23px;
     }
 
     h2 {
+      font-family: Arial;
       font-size: 20px;
     }
 
     h3 {
+      font-family: Arial;
       font-size: 17px;
     }
 
@@ -124,13 +139,14 @@ const MarkdownRenderer = styled.div`
     }
 
     hr {
+      font-family: Arial;
       margin: 50px 0;
     }
   }
 `;
 
 const PostContent: FunctionComponent<PostContentProps> = function ({ html }) {
-    return <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
+  return <MarkdownRenderer dangerouslySetInnerHTML={{ __html: html }} />;
 };
 
 export default PostContent;
