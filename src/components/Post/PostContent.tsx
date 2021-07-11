@@ -84,10 +84,31 @@ const MarkdownRenderer = styled.div`
     //padding: 30px 0;
   }
 
-  // Adjust Horizontal Rule style
+  // Adjust Horizontal Rule Style
   hr {
     border: 1px solid #000000;
     margin: 100px 0;
+  }
+
+  // Adjust Table Style
+  table {
+    margin-right: auto;
+    border-spacing: 0;
+    border-right: 1px solid black;
+  }
+  th {
+    font-family: Arial;
+    padding: 3px 10px;
+    background-color: #d1ecf1;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+  }
+  td {
+    font-family: Arial;
+    padding: 3px 10px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
   }
 
   // Adjust Link Element Style
