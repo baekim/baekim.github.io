@@ -27,19 +27,23 @@ const MarkdownRenderer = styled.div`
     padding: 3px 0;
   }
 
+  li {
+    font-family: Arial;
+  }
+
   // Adjust Heading Element Style
   h1,
   h2,
   h3 {
     font-family: Arial;
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   * + h1,
   * + h2,
   * + h3 {
-    margin-top: 80px;
+    margin-top: 30px;
   }
 
   hr + h1,
@@ -77,7 +81,7 @@ const MarkdownRenderer = styled.div`
   ul {
     font-family: Arial;
     margin-left: 20px;
-    padding: 30px 0;
+    //padding: 30px 0;
   }
 
   // Adjust Horizontal Rule style
