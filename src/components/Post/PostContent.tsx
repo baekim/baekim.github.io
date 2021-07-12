@@ -27,19 +27,23 @@ const MarkdownRenderer = styled.div`
     padding: 3px 0;
   }
 
+  li {
+    font-family: Arial;
+  }
+
   // Adjust Heading Element Style
   h1,
   h2,
   h3 {
     font-family: Arial;
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   * + h1,
   * + h2,
   * + h3 {
-    margin-top: 80px;
+    margin-top: 30px;
   }
 
   hr + h1,
@@ -73,17 +77,50 @@ const MarkdownRenderer = styled.div`
   }
 
   // Adjust List Element Style
-  ol,
-  ul {
-    font-family: Arial;
+
+  ol {
     margin-left: 20px;
-    padding: 30px 0;
+    line-height: 1.8;
   }
 
-  // Adjust Horizontal Rule style
+  ul {
+    margin-left: 20px;
+    line-height: 1.8;
+  }
+
+  li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Arial;
+    margin-left: 20px;
+    line-height: 1.8;
+  }
+
+  // Adjust Horizontal Rule Style
   hr {
     border: 1px solid #000000;
-    margin: 100px 0;
+    margin: 50px 0;
+  }
+
+  // Adjust Table Style
+  table {
+    margin-right: auto;
+    border-spacing: 0;
+    border-right: 1px solid black;
+  }
+  th {
+    font-family: Arial;
+    padding: 3px 10px;
+    background-color: #d1ecf1;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+  }
+  td {
+    font-family: Arial;
+    padding: 3px 10px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
   }
 
   // Adjust Link Element Style
@@ -105,10 +142,20 @@ const MarkdownRenderer = styled.div`
       border-radius: 3px;
     }
   }
-
-  code[class*='language-'],
-  pre[class*='language-'] {
+  ,
+  code [class*='language-'] {
     tab-size: 2;
+    font-family: Arial;
+    font-size: 15px;
+  }
+  ,
+  span {
+    font-family: Arial;
+    tab-size: 2;
+  }
+  ,
+  .text {
+    font-family: Arial;
   }
 
   // Markdown Responsive Design
@@ -140,7 +187,7 @@ const MarkdownRenderer = styled.div`
 
     hr {
       font-family: Arial;
-      margin: 50px 0;
+      margin: 20px 0;
     }
   }
 `;
