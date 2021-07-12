@@ -77,11 +77,23 @@ const MarkdownRenderer = styled.div`
   }
 
   // Adjust List Element Style
-  ol,
+
+  ol {
+    margin-left: 20px;
+    line-height: 1.8;
+  }
+
   ul {
+    margin-left: 20px;
+    line-height: 1.8;
+  }
+
+  li {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-family: Arial;
     margin-left: 20px;
-    //padding: 30px 0;
+    line-height: 1.8;
   }
 
   // Adjust Horizontal Rule Style
