@@ -87,7 +87,7 @@ const MarkdownRenderer = styled.div`
   // Adjust Horizontal Rule Style
   hr {
     border: 1px solid #000000;
-    margin: 100px 0;
+    margin: 50px 0;
   }
 
   // Adjust Table Style
@@ -130,10 +130,20 @@ const MarkdownRenderer = styled.div`
       border-radius: 3px;
     }
   }
-
-  code[class*='language-'],
-  pre[class*='language-'] {
+  ,
+  code [class*='language-'] {
     tab-size: 2;
+    font-family: Arial;
+    font-size: 15px;
+  }
+  ,
+  span {
+    font-family: Arial;
+    tab-size: 2;
+  }
+  ,
+  .text {
+    font-family: Arial;
   }
 
   // Markdown Responsive Design
@@ -165,7 +175,7 @@ const MarkdownRenderer = styled.div`
 
     hr {
       font-family: Arial;
-      margin: 50px 0;
+      margin: 20px 0;
     }
   }
 `;
