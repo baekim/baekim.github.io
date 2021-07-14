@@ -181,6 +181,10 @@ const MarkdownRenderer = styled.div`
       font-size: 17px;
     }
 
+    h4 {
+      font-family: Arial;
+    }
+
     img {
       width: 100%;
     }
