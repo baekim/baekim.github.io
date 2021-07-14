@@ -67,6 +67,10 @@ const MarkdownRenderer = styled.div`
     font-size: 20px;
   }
 
+  h4 {
+    font-family: Arial;
+  }
+
   // Adjust Quotation Element Style
   blockquote {
     margin: 30px 0;
