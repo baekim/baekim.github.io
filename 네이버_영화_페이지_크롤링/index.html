@@ -1,0 +1,301 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.e53586a225ffdde20c86.css" id="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 3.6.2"/><title data-react-helmet="true"></title><meta data-react-helmet="true" name="description"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0"/><meta data-react-helmet="true" http-equiv="Content-Type" content="text/html;charset=UTF-8"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:title"/><meta data-react-helmet="true" property="og:description"/><meta data-react-helmet="true" property="og:image"/><meta data-react-helmet="true" property="og:url"/><meta data-react-helmet="true" property="og:site_name"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title"/><meta data-react-helmet="true" name="twitter:description"/><meta data-react-helmet="true" name="twitter:image"/><meta data-react-helmet="true" name="twitter:site" content="@username"/><meta data-react-helmet="true" name="twitter:creator" content="@username"/><meta data-react-helmet="true" name="google-site-verification" content="OaO6k-mksvth1OeDhL3fgi_T17XLIfilxc5YENgPzdI"/><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/><link rel="canonical" href="https://baekim.github.io/네이버_영화_페이지_크롤링/" data-baseprotocol="https:" data-basehost="baekim.github.io"/><link as="script" rel="preload" href="/webpack-runtime-02eb5fa4516d7b92d0d4.js"/><link as="script" rel="preload" href="/framework-c96300279e079ab009d0.js"/><link as="script" rel="preload" href="/app-de446a2a54f6ef966eff.js"/><link as="script" rel="preload" href="/cb1608f2-a2b9d154d9bc2051201f.js"/><link as="script" rel="preload" href="/d0dcf9c1039535d44ee74defc829dfbf62dac3c5-1e80fc2283b2a8b51ae4.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-tsx-dba291b8d9c28c9493d0.js"/><link as="fetch" rel="preload" href="/page-data/네이버_영화_페이지_크롤링/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion="css 13ku56z">.css-13ku56z{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;}</style><main class="css-13ku56z e1strnqo0"><style data-emotion="css-global 1fjbsoa">@import url('<https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap>');*{padding:0;margin:0;box-sizing:border-box;font-family:'Nanum Myeongjo',serif;}html,body,#___gatsby{height:100%;}a,a:hover{color:inherit;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;}</style><style data-emotion="css 16cz9yp">.css-16cz9yp{position:relative;width:100%;height:400px;}@media (max-width: 768px){.css-16cz9yp{height:300px;}}</style><div class="css-16cz9yp e1opi4mu5"><style data-emotion="css 1bjn9yo">.css-1bjn9yo{z-index:-1;width:100%;height:400px;object-fit:cover;-webkit-filter:brightness(0.25);filter:brightness(0.25);}@media (max-width: 768px){.css-1bjn9yo{height:300px;}}</style><div class="css-1bjn9yo e1opi4mu4 gatsby-image-wrapper" style="position:absolute;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:56.5%"></div><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAALCAYAAACd1bY6AAAACXBIWXMAABcRAAAXEQHKJvM/AAABBUlEQVQoz51SQU7DMBDM7zgAanYD5Qlw4QR/4AWcoSpFLShR2sZOEKGuXdpvDbKb4KikDephtLtea3Zn7IClQTs09vfaETQLEhosDEhqkFj62kVdDbC99mHB7kFNwHLj8j+w90Q74d7NwuwVnBtwsQZ/rMHFN6KaqLJhS3iIzEWFs+QOveELeoMY508TRMMYt1LhptAIG5K7Zdo8UzgZlaD0E+F4DhrP0BfaoZbaQbY1mnIDihUekkdcp2+IBgmuRjEunyfg6RcoXzV8OyjTyjDoywXuF++4mJXgtARnS/Bcec/Ev2R6c0+zDUiu3CaWoIZ/hI6v8ftKQiOqZO/Cb9ZJdjx+AO5WQ6zQYKFQAAAAAElFTkSuQmCC" alt="thumbnail" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source type='image/webp' srcset="/static/ef03b53e2967a472fa5b7d09b2ac1a93/8444f/python_mongo.webp 200w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/42fc5/python_mongo.webp 400w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/210fa/python_mongo.webp 800w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/3058d/python_mongo.webp 1200w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/747be/python_mongo.webp 1600w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/44894/python_mongo.webp 2000w" sizes="(max-width: 800px) 100vw, 800px" /><source srcset="/static/ef03b53e2967a472fa5b7d09b2ac1a93/a9f05/python_mongo.png 200w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/23840/python_mongo.png 400w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/c019b/python_mongo.png 800w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/00376/python_mongo.png 1200w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/03b64/python_mongo.png 1600w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/908bb/python_mongo.png 2000w" sizes="(max-width: 800px) 100vw, 800px" /><img loading="lazy" sizes="(max-width: 800px) 100vw, 800px" srcset="/static/ef03b53e2967a472fa5b7d09b2ac1a93/a9f05/python_mongo.png 200w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/23840/python_mongo.png 400w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/c019b/python_mongo.png 800w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/00376/python_mongo.png 1200w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/03b64/python_mongo.png 1600w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/908bb/python_mongo.png 2000w" src="/static/ef03b53e2967a472fa5b7d09b2ac1a93/c019b/python_mongo.png" alt="thumbnail" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><style data-emotion="css 9o6cws">.css-9o6cws{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-family:Arial;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:768px;height:100%;margin:0 auto;padding:60px 0;color:#ffffff;}</style><div class="css-9o6cws e1st1jau3"><style data-emotion="css 1ceuvtj">.css-1ceuvtj{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#ffffff;color:#000000;font-size:22px;cursor:pointer;box-shadow:0 0 10px rgba(0, 0, 0, 0.3);}</style><div class="css-1ceuvtj e1st1jau2"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" class="svg-inline--fa fa-arrow-left fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path></svg></div><style data-emotion="css z1ugjh">.css-z1ugjh{display:-webkit-box;overflow:hidden;overflow-wrap:break-word;margin-top:auto;text-overflow:ellipsis;white-space:normal;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-family:Arial;font-size:45px;font-weight:800;}</style><div class="css-z1ugjh e1st1jau1">[Python] 네이버 영화 페이지 크롤링</div><style data-emotion="css tqjj6e">.css-tqjj6e{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:10px;font-family:Arial;font-size:18px;font-weight:700;}</style><div class="css-tqjj6e e1st1jau0"><div style="font-family:Arial">Database / Python / MongoDB / Sparta</div><div style="font-family:Arial">2021.07.25.</div></div></div></div><style data-emotion="css 825y69">.css-825y69{font-family:Arial;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:768px;margin:0 auto;padding:100px 0;word-break:break-all;line-height:1.8;font-family:Arial;font-size:16px;font-weight:400;}.css-825y69 p{font-family:Arial;padding:3px 0;}.css-825y69 li{font-family:Arial;}.css-825y69 h1,.css-825y69 h2,.css-825y69 h3{font-family:Arial;font-weight:800;margin-bottom:10px;}.css-825y69 *+h1,.css-825y69 *+h2,.css-825y69 *+h3{margin-top:30px;}.css-825y69 hr+h1,.css-825y69 hr+h2,.css-825y69 hr+h3{margin-top:0;}.css-825y69 h1{font-family:Arial;font-size:30px;}.css-825y69 h2{font-family:Arial;font-size:25px;}.css-825y69 h3{font-family:Arial;font-size:20px;}.css-825y69 h4{font-family:Arial;}.css-825y69 blockquote{margin:30px 0;padding:5px 15px;border-left:2px solid #000000;font-family:Arial;font-weight:800;}.css-825y69 ol{margin-left:20px;line-height:1.8;}.css-825y69 ul{margin-left:20px;line-height:1.8;}.css-825y69 li{margin-top:10px;margin-bottom:10px;font-family:Arial;margin-left:20px;line-height:1.8;}.css-825y69 hr{border:1px solid #000000;margin:50px 0;}.css-825y69 table{margin-right:auto;border-spacing:0;border-right:1px solid black;}.css-825y69 th{font-family:Arial;padding:3px 10px;background-color:#d1ecf1;border-top:1px solid black;border-bottom:1px solid black;border-left:1px solid black;}.css-825y69 td{font-family:Arial;padding:3px 10px;border-left:1px solid black;border-bottom:1px solid black;}.css-825y69 a{font-family:Arial;color:#4263eb;-webkit-text-decoration:underline;text-decoration:underline;}.css-825y69 pre[class*='language-']{margin:30px 0;padding:15px;font-family:Arial;font-size:15px;}.css-825y69 pre[class*='language-']::-webkit-scrollbar-thumb{background:rgba(255, 255, 255, 0.5);border-radius:3px;}.css-825y69 code [class*='language-']{tab-size:2;font-family:Arial;font-size:15px;}.css-825y69 span{font-family:Arial;tab-size:2;}.css-825y69 .text{font-family:Arial;}@media (max-width: 768px){.css-825y69{width:100%;padding:80px 20px;line-height:1.6;font-family:Arial;font-size:14px;}.css-825y69 h1{font-family:Arial;font-size:23px;}.css-825y69 h2{font-family:Arial;font-size:20px;}.css-825y69 h3{font-family:Arial;font-size:17px;}.css-825y69 h4{font-family:Arial;}.css-825y69 img{width:100%;}.css-825y69 hr{font-family:Arial;margin:20px 0;}}</style><div class="css-825y69 e1ijh0y10"><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 768px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ef03b53e2967a472fa5b7d09b2ac1a93/f97d7/python_mongo.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABcRAAAXEQHKJvM/AAABB0lEQVQoz62SzU7CQBSF+3oqFGaokYQFKzcmPoE7V258A11oAoSpKWlhbqf+hWmpLHioQzqUMvGHn+Di5N7FyTdncq7DKYUtJnU17f277y85P4EpeAGjzOxrsIFWYL3ykd4NNOZiyk/wWIOrHFzNjIpHGnIDW82dCafgtIAb3aEu7sH9DzTFBO5QohO+40pN0SaN5t4JTYIcLQpw5gucPk/Q6AWoPQzQDt9w+ZodBlx/x5VzdHsRrscCzFe46I/gDUIwIbeW5fzWcos0TqIct8kjbpIn1PuE8+EY3ksML0jK0lKrpK2lWCkpR01+gasMLJ6VyioY2+9s9KbBai9PxtJBCY/RvwOXiMtiUPyZ2Z4AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/ef03b53e2967a472fa5b7d09b2ac1a93/a59e9/python_mongo.webp 192w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/0ca9f/python_mongo.webp 384w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/dc9b9/python_mongo.webp 768w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/e2c2f/python_mongo.webp 1152w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/f3efb/python_mongo.webp 1536w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/fab06/python_mongo.webp 2000w"
+              sizes="(max-width: 768px) 100vw, 768px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/ef03b53e2967a472fa5b7d09b2ac1a93/3b721/python_mongo.png 192w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/66595/python_mongo.png 384w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/fe486/python_mongo.png 768w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/d2d74/python_mongo.png 1152w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/e8464/python_mongo.png 1536w,
+/static/ef03b53e2967a472fa5b7d09b2ac1a93/f97d7/python_mongo.png 2000w"
+            sizes="(max-width: 768px) 100vw, 768px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/ef03b53e2967a472fa5b7d09b2ac1a93/fe486/python_mongo.png"
+            alt="image.info"
+            title="image.info"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
+<h2>네이버 영화 랭킹, 제목, 평점 가져오기</h2>
+<p>네이버 영화 페이지에서 크롤링을 통해 데이터를 제어하고자 한다. <a href="https://movie.naver.com/movie/sdb/rank/rmovie.naver?sel=pnt&#x26;date=20210723" target="_blank" rel="nofollow">네이버 영화 바로가기</a></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 768px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/16721f65ca6e2032903fa31ae1f81159/9afce/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 57.29166666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAA6cAAAOnAEHlFPdAAACPUlEQVQoz51RQWsTQRjdf2OTVdCWpCRFxNY0hdhLTx7aoxf/g7dWsCA9eqw0IPkBXoTatGkDQi2IgidpqWkkbZLd7M7uzu7sfN+TGcFW8OTAY77hffPmfW+c8oN7uvqwrOcqVf1yc1O/bbX0zs6Objabdv8XDNdqtfT29hu99WpLb6yv6/UXG/r5+9faqTeWsVBfQqlaRXtvD5RJ/PfSgPNubZX311a5tVTnj50OA8xBELCUkvM8tyAiC1NnWcZpmtpdKcVZpv7UcRKz82xlBU+Xl/FkYQHdTgeZUsiyDMxsYWohBCIhQET2nCQJlOlLJXzft7XWOeI4hrPYaOD+/DxKlQo6BwcIggDj8Rie5+Hq6gqnZ2f4dHyMk5MTTMIQiZSWC0WExBvCHw2hiexjVvBxo4F6vY7y7CyODg9tFCrPf0ei9XU+TOBEIE8i69Jwk8kEF/2+dWxWFEVwHtVqaCzWUJ6ZQbf9ARj14YUCSmX2ojLjG71EgL9/Bg3OrUMjmKapjcOMbGAFp6enMVcq4e7tOzja2wXGP+EFAqmUfwvKCHz6FfqyZ3MzgoY34lJKa8AKFgoFvjU1xVNFl7vtXcbwgsdBaDVugpOI+fQL68sf7Ps+ayLOgjGPBgOWaWp74jhmx3VdGBRcF13jcHQBX0TI0tQGbX/7xsh6cA7f8y1nPrDX6yEMw+sMXdcl1y1SoVikw/02IQlpEoYURRHleW4UiQFiGRGdfyM97JMIQ9Jak5SShBC2TylFcRzTL4sC9rtraChFAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/16721f65ca6e2032903fa31ae1f81159/a59e9/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_1.webp 192w,
+/static/16721f65ca6e2032903fa31ae1f81159/0ca9f/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_1.webp 384w,
+/static/16721f65ca6e2032903fa31ae1f81159/dc9b9/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_1.webp 768w,
+/static/16721f65ca6e2032903fa31ae1f81159/2c45b/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_1.webp 1001w"
+              sizes="(max-width: 768px) 100vw, 768px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/16721f65ca6e2032903fa31ae1f81159/3b721/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_1.png 192w,
+/static/16721f65ca6e2032903fa31ae1f81159/66595/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_1.png 384w,
+/static/16721f65ca6e2032903fa31ae1f81159/fe486/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_1.png 768w,
+/static/16721f65ca6e2032903fa31ae1f81159/9afce/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_1.png 1001w"
+            sizes="(max-width: 768px) 100vw, 768px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/16721f65ca6e2032903fa31ae1f81159/fe486/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_1.png"
+            alt="image.info"
+            title="image.info"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span><br/></p>
+<p>🔽 파이썬에 requests, BeautifulSoup, pymongo 패키지를 설치한다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 478px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f6edd6e3b0c0418fb93497b1b88dcd6b/e4b77/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.14583333333334%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA6cAAAOnAEHlFPdAAAC2ElEQVQ4y1WSS28URxSF+weFKAOMX3F3V3e9uqpf9Nix4/g1xuIRsIxxglCiKCTGMWAk46BgRUEIKQvEgn3C1n/DS2+8IauJ1HKP74m6bQZS0qdTdUs60j33Oq/evCm/Xl0rv737fbmytl7eWL094GbNrQ+srH1TLl+7WT5/8bIEMICIBuo8eLyD1iiDp1IMuRzt8QDDnsAYUxhyQwyNBwNGPI5PLozg9p3vUFUVer0ejo+PcXJyMsDZ3XtJ4eQ6RTN3KLQpRUaTijSFQhLjkvyQEwsFMS4Gb2VimpqZJZvm9NffbwnAAGdn9ykFyiLJCxK2gEimEEQd+CoG4xxCR+BKww95A+MCXhBi3GdoXWzj2d4ejo6OcHBwgMPDQzhPfn1KXEVIspRksQw7exd6eh1e8hVEnEIlBZiK4QnT4J6pL20D0zHCKG3q85evfjDMO5MUWYssz6C0gh9wCJMh1BYe13BDBSYNpM0QKANfaPgiav7q+5jPMbOwBGfnyS65LIRNMtI2RZwXiLMCMrIwSQqbZvBDAZcFjcZ53tSjJDmNQ2uIKGqimF/swnm4/ZjOtS5gzPVJaIP0UgfaJgiEqnOFSTN4YZ2bQCA18s4ElDEQkYE0tkHZGIHSmO8uwfn9j+c0MfUl5ha69dSQFROojX0uG3NlE7iMww14Y5gUX8DkHcg4gzQxpDGnhlKdGpZlSb3ev3j37h+aW+jic4+hjqBuMclSmNhAKgku6imHkPkMVDHXIOL8rGUDJuSp4fv96ff7tLG5RddvrNDK6i2anuuSnVymbPoKRcUihcksBWaCpI5IqHpPBQVCUsAlhUKRywKaX1wih4jwnvrU216fF3++xqfeFFh2BaN6EX56Fa6eRntkFK32MFoXhwacbw/j3Gfncakzidqw+ph+v18BqPb396t7936otrcfVFtb9xt99OhhtbH5S/Xz/c3/Udd+/Gmj+u3ZXvUfsr1GFVE9VM8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/f6edd6e3b0c0418fb93497b1b88dcd6b/a59e9/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_2.webp 192w,
+/static/f6edd6e3b0c0418fb93497b1b88dcd6b/0ca9f/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_2.webp 384w,
+/static/f6edd6e3b0c0418fb93497b1b88dcd6b/3c317/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_2.webp 478w"
+              sizes="(max-width: 478px) 100vw, 478px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/f6edd6e3b0c0418fb93497b1b88dcd6b/3b721/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_2.png 192w,
+/static/f6edd6e3b0c0418fb93497b1b88dcd6b/66595/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_2.png 384w,
+/static/f6edd6e3b0c0418fb93497b1b88dcd6b/e4b77/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_2.png 478w"
+            sizes="(max-width: 478px) 100vw, 478px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/f6edd6e3b0c0418fb93497b1b88dcd6b/e4b77/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_2.png"
+            alt="image.info"
+            title="image.info"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span><br/></p>
+<p>🔽 위 패키지들을 import 시키고, mongoDB client를 불러준다. database name은 ‘testdb’로 정했다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment"># crawling_movie_list.py</span>
+<span class="token keyword">import</span> requests
+<span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+<span class="token keyword">from</span> pymongo <span class="token keyword">import</span> MongoClient
+
+client <span class="token operator">=</span> MongoClient<span class="token punctuation">(</span><span class="token string">'localhost'</span><span class="token punctuation">,</span> <span class="token number">27017</span><span class="token punctuation">)</span>
+db <span class="token operator">=</span> client<span class="token punctuation">.</span>testdb</code></pre></div>
+<p>🔽 크롤링을 위해 기본 브라우저 속성을 잡아주고, 데이터를 받아온다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">headers <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'User-Agent'</span><span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'</span><span class="token punctuation">}</span>
+data <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'https://movie.naver.com/movie/sdb/rank/rmovie.nhn?sel=pnt&amp;date=20210723'</span><span class="token punctuation">,</span> headers<span class="token operator">=</span>headers<span class="token punctuation">)</span></code></pre></div>
+<p>🔽 위에서 본 네이버 영화 페이지의 전체 <html> 를 모두 가져온다</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">soup <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>data<span class="token punctuation">.</span>text<span class="token punctuation">,</span> <span class="token string">'html.parser'</span><span class="token punctuation">)</span></code></pre></div>
+<p>🔽 이제 우리가 필요한 영화 제목들을 가져와보자.</p>
+<p>크롤링한 source 코드를 보고 가져올 부분 근처를 보고, 가장 가까운 부모 id값을 찾아 #태그로 불러준다.</p>
+<p>Chrome Browser를 이용하면 해당 부분에서 우클릭으로 copy > copy selector 기능을 통해 가져올 수 있다.</p>
+<p>각 영화 정보는 &#x3C;tr 태그> 안에 담겨져 있다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">tr_tags <span class="token operator">=</span> soup<span class="token punctuation">.</span>select<span class="token punctuation">(</span><span class="token string">'#old_content > table > tbody > tr'</span><span class="token punctuation">)</span></code></pre></div>
+<p>🔽 이제 영화 제목이 담긴 &#x3C;a 태그> 부분을 가져온다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">for</span> tr <span class="token keyword">in</span> tr_tags<span class="token punctuation">:</span>
+    a_tag <span class="token operator">=</span> tr<span class="token punctuation">.</span>select_one<span class="token punctuation">(</span><span class="token string">'td.title > div > a'</span><span class="token punctuation">)</span></code></pre></div>
+<p>🔽 네이버 영화 페이지에는 10개 영화마다 구분선이 존재하는데, 구분선도 &#x3C;tr 태그> 안에 담겨 있기 때문에, for loop를 돌려 하위 값을 불러오고자하면 오류가 발생한다. 따라서 구분선 제외하는 작업이 필요하다.</p>
+<p>구분선을 제외하고, 영화 제목을 출력해보면 아래와 같이 50개의 영화 제목이 출력된다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">if</span> a_tag <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+    title <span class="token operator">=</span> a_tag<span class="token punctuation">.</span>text
+    <span class="token keyword">print</span><span class="token punctuation">(</span>title<span class="token punctuation">)</span>
+    
+<span class="token operator">>></span> 그린 북
+가버나움
+디지몬 어드벤처 라스트 에볼루션 <span class="token punctuation">:</span> 인연
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+쉰들러 리스트
+클레멘타인
+여인의 향기</code></pre></div>
+<p>🔽 제목이 잘 들어오는 것을 확인했다면, 이제 순위, 제목, 평점을 가져와보자.</p>
+<p>순위는 &#x3C;img 태그> 안의 alt 속성안에 들어있고,
+평점은 &#x3C;td 태그> 중 class=“point” 인 태그안에 들어있다.</p>
+<p>결과를 확인하면 아래와 같이 rank, title, stars 순으로 출력해준다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">if</span> a_tag <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+    rank <span class="token operator">=</span> tr<span class="token punctuation">.</span>select_one<span class="token punctuation">(</span><span class="token string">'td:nth-child(1) > img'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'alt'</span><span class="token punctuation">]</span>
+    title <span class="token operator">=</span> a_tag<span class="token punctuation">.</span>text
+    stars <span class="token operator">=</span> tr<span class="token punctuation">.</span>select_one<span class="token punctuation">(</span><span class="token string">'td.point'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>text
+
+    <span class="token keyword">print</span><span class="token punctuation">(</span>rank<span class="token punctuation">,</span> title<span class="token punctuation">,</span> stars<span class="token punctuation">)</span>
+
+<span class="token operator">>></span> <span class="token number">01</span> 그린 북 <span class="token number">9.60</span>
+<span class="token number">02</span> 가버나움 <span class="token number">9.59</span>
+<span class="token number">03</span> 디지몬 어드벤처 라스트 에볼루션 <span class="token punctuation">:</span> 인연 <span class="token number">9.54</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token number">48</span> 쉰들러 리스트 <span class="token number">9.37</span>
+<span class="token number">49</span> 클레멘타인 <span class="token number">9.37</span>
+<span class="token number">50</span> 여인의 향기 <span class="token number">9.37</span></code></pre></div>
+<p>🔽 이제 mongoDB에 넣어보자. 앞서 mongoDB에 testdb라는 collection을 만들어 두었다. 이제 아래 코드를 통해 movies라는 테이블을 만들고, 그 안에 영화 목록을 넣어보자.</p>
+<p>영화 순위, 제목, 평점을 딕셔너리로 묶어주고 insert_one()을 통해 movies 테이블 안으로 인서트 해준다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">if</span> a_tag <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+    rank <span class="token operator">=</span> tr<span class="token punctuation">.</span>select_one<span class="token punctuation">(</span><span class="token string">'td:nth-child(1) > img'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'alt'</span><span class="token punctuation">]</span>
+    title <span class="token operator">=</span> a_tag<span class="token punctuation">.</span>text
+    stars <span class="token operator">=</span> tr<span class="token punctuation">.</span>select_one<span class="token punctuation">(</span><span class="token string">'td.point'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>text
+
+    <span class="token comment"># print(rank, title, stars)</span>
+    item <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">'rank'</span><span class="token punctuation">:</span> rank<span class="token punctuation">,</span>
+        <span class="token string">'title'</span><span class="token punctuation">:</span> title<span class="token punctuation">,</span>
+        <span class="token string">'stars'</span><span class="token punctuation">:</span> stars
+    <span class="token punctuation">}</span>
+    db<span class="token punctuation">.</span>movies<span class="token punctuation">.</span>insert_one<span class="token punctuation">(</span>item<span class="token punctuation">)</span></code></pre></div>
+<p>🔽 MongoDB를 확인해보면 아래와 같이 들어오는 것을 볼 수 있다.</p>
+<p>MongoDB를 확인하기 위해 ‘Robo 3T’라는 open-source MongoDB GUI를 사용했다. <a href="https://robomongo.org/" target="_blank" rel="nofollow">Robo 3T 바로가기</a></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 426px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/05e3d1c1503ff0214b3055f2f66e35f3/28e10/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 121.35416666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAA6cAAAOnAEHlFPdAAADLklEQVQ4y42Vb2/TMBDG++mREG+AbmXdYB+FjSFgEppo935so3H+Nm3sJI3TpXfoucRpOkAi0iPHjvfrc747b1RWhU2z1GbrzBpjrNbaZlrb7XZr67qW8X/VNI0d+b7PFxeX/OnqM3/9ds0fP17w1ecr/nZ9zZeXn/jm5obnt7c8m815Nt9rPr9tdduOP2YzXiYJj37M5jQ5mdLZh3M6mZ7S9GxKp+cndHI6oQ/n5/T+bEpHxxM6mryj8dExjY8nojfjY3o7PqLXb8fy7cXLV/Tl+juNbL3l5TLlylrOTc5lWfLwqaqKn56euLZ1t0JMxGy3DTdNw7W1bEzBGVRseFTXNefGcLpMOU1TXi6XojhOOE1XnGWaN5uNrK3XmSB3ux0TkQjPer3ioizkfWSrio0xrDzF3sLjxWLBnufxr18LDoJAvgG4SlN+fHxkGAAQruEQMkbLDwuw6oC+UgKClGrhYRiyNobLTcmr1YqRQKwhEuzDO0BGa9n3zKEnEGzEH2IMghYIh0mS8Hq97h06IWwAjQNWw5A91QEVLxYeR2HUA3GGP3/eCVhS052hAM0AaCVLh0DVhY8zHDrE+W632w60Twwc5nm+B2IS+L6ECgHkK5+jKGZjcimdOI57F0jEEIgq6YH4dUzCIBQQhMP2/UAgziHOD/Msy/oaHQL7kLFZay2OJGyl+qTAIb4VRSHAh4cHvr+/l+9Yd1DA3HzkfsXV1FAuizgWmTdN2zV1LfOhS7dXHMJBEsUSEoQExFEs3YNvAMIh1iEAhx2DPZA4xAvsBghZqV6oSZcIJCWKIo7CUBzuM01/hnwA9AZAr6tDrQXoyqbtjsOelk7ZA3PWWcZK+riV8vet53oZdx3mh+H+C6g1q8WgsLtOCcOoByJ8jM9vG9cpfR3i/muB3mGnoPWiPdBda5j/ARx2StmdIepQalG1nYJxmBTAUIdJHP/FITqly3Ke56S1psAPRL4fUBiGMiZxQsYYqqqKkiShu7s7KsuS2vLbP7kxVBSFrLdZzrLeneo6BSNC1trIv4W0u2ARmmsEd4W111e7jk5pdrtd868H35yezw/U7BqwfgMZdRRm4i9lZwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/05e3d1c1503ff0214b3055f2f66e35f3/a59e9/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_3.webp 192w,
+/static/05e3d1c1503ff0214b3055f2f66e35f3/0ca9f/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_3.webp 384w,
+/static/05e3d1c1503ff0214b3055f2f66e35f3/039b3/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_3.webp 426w"
+              sizes="(max-width: 426px) 100vw, 426px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/05e3d1c1503ff0214b3055f2f66e35f3/3b721/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_3.png 192w,
+/static/05e3d1c1503ff0214b3055f2f66e35f3/66595/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_3.png 384w,
+/static/05e3d1c1503ff0214b3055f2f66e35f3/28e10/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_3.png 426w"
+            sizes="(max-width: 426px) 100vw, 426px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/05e3d1c1503ff0214b3055f2f66e35f3/28e10/%EB%84%A4%EC%9D%B4%EB%B2%84_%EC%98%81%ED%99%94_%ED%8E%98%EC%9D%B4%EC%A7%80_%ED%81%AC%EB%A1%A4%EB%A7%81_3.png"
+            alt="image.info"
+            title="image.info"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span><br/></p>
+<p>🔽 전체 코드를 보면 다음과 같다.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">import</span> requests
+<span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+<span class="token keyword">from</span> pymongo <span class="token keyword">import</span> MongoClient
+
+client <span class="token operator">=</span> MongoClient<span class="token punctuation">(</span><span class="token string">'localhost'</span><span class="token punctuation">,</span> <span class="token number">27017</span><span class="token punctuation">)</span>
+db <span class="token operator">=</span> client<span class="token punctuation">.</span>testdb
+
+headers <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'User-Agent'</span><span class="token punctuation">:</span> <span class="token string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) '</span>
+                         <span class="token string">'Chrome/73.0.3683.86 Safari/537.36'</span><span class="token punctuation">}</span>
+data <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'https://movie.naver.com/movie/sdb/rank/rmovie.nhn?sel=pnt&amp;date=20210723'</span><span class="token punctuation">,</span> headers<span class="token operator">=</span>headers<span class="token punctuation">)</span>
+
+<span class="token comment"># 해당 페이지의 Elements 를 모두 가져오자</span>
+soup <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>data<span class="token punctuation">.</span>text<span class="token punctuation">,</span> <span class="token string">'html.parser'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># 영화 제목들 가져오기 (.select)</span>
+tr_tags <span class="token operator">=</span> soup<span class="token punctuation">.</span>select<span class="token punctuation">(</span><span class="token string">'#old_content > table > tbody > tr'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> tr <span class="token keyword">in</span> tr_tags<span class="token punctuation">:</span>
+    <span class="token comment"># 책 제목이 담긴 &lt;a 태그> 부분을 가져오자</span>
+    a_tag <span class="token operator">=</span> tr<span class="token punctuation">.</span>select_one<span class="token punctuation">(</span><span class="token string">'td.title > div > a'</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># week3-3 부분들이 None 처리되어 들어온다</span>
+    <span class="token comment"># None 부분들을 필터하고 제목들 가져오자</span>
+    <span class="token keyword">if</span> a_tag <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+
+        <span class="token comment"># rank, title, evaluation 확인하기</span>
+        <span class="token comment"># rank 값이 들어있는 부분인 &lt;img 태그>를 가져오자</span>
+        <span class="token comment"># rank 값은 'alt' 속성에 담겨있다</span>
+        rank <span class="token operator">=</span> tr<span class="token punctuation">.</span>select_one<span class="token punctuation">(</span><span class="token string">'td:nth-child(1) > img'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string">'alt'</span><span class="token punctuation">]</span>
+        title <span class="token operator">=</span> a_tag<span class="token punctuation">.</span>text
+        stars <span class="token operator">=</span> tr<span class="token punctuation">.</span>select_one<span class="token punctuation">(</span><span class="token string">'td.point'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>text
+
+        item <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">'rank'</span><span class="token punctuation">:</span> rank<span class="token punctuation">,</span>
+            <span class="token string">'title'</span><span class="token punctuation">:</span> title<span class="token punctuation">,</span>
+            <span class="token string">'stars'</span><span class="token punctuation">:</span> stars
+        <span class="token punctuation">}</span>
+        db<span class="token punctuation">.</span>movies<span class="token punctuation">.</span>insert_one<span class="token punctuation">(</span>item<span class="token punctuation">)</span></code></pre></div></div><style data-emotion="css hx9xpc">@media (max-width: 768px){.css-hx9xpc{padding:0 20px;}}</style><div class="css-hx9xpc e1gqsjds0"></div><style data-emotion="css 1hxiljc">.css-1hxiljc{display:grid;place-items:center;margin-top:auto;padding:50px 0;font-family:Arial;font-size:15px;text-align:center;line-height:1.5;}@media (max-width: 768px){.css-1hxiljc{font-size:13px;}}</style><footer class="css-1hxiljc e1oae0v80">Thank You for Visiting My Blog, Have a Good Day 😆<br/>© 2021 Ben Kim, Powered By Gatsby.</footer></main></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/네이버_영화_페이지_크롤링/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-a000735a40312f7afe11.js"],"app":["/app-de446a2a54f6ef966eff.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-f8327562012af2309154.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-3c63f67156cf81fb7c52.js"],"component---src-pages-info-tsx":["/component---src-pages-info-tsx-8253c7febe95d59a3243.js"],"component---src-templates-post-template-tsx":["/component---src-templates-post-template-tsx-dba291b8d9c28c9493d0.js"]};/*]]>*/</script><script src="/polyfill-a000735a40312f7afe11.js" nomodule=""></script><script src="/component---src-templates-post-template-tsx-dba291b8d9c28c9493d0.js" async=""></script><script src="/d0dcf9c1039535d44ee74defc829dfbf62dac3c5-1e80fc2283b2a8b51ae4.js" async=""></script><script src="/cb1608f2-a2b9d154d9bc2051201f.js" async=""></script><script src="/app-de446a2a54f6ef966eff.js" async=""></script><script src="/framework-c96300279e079ab009d0.js" async=""></script><script src="/webpack-runtime-02eb5fa4516d7b92d0d4.js" async=""></script></body></html>
