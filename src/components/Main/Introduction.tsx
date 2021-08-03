@@ -61,7 +61,7 @@ const Introduction: FunctionComponent<IntroductionProps> = function ({
 
         <div>
           <SubTitle>Blog by</SubTitle>
-          <Title>A Data Analyst / Developer</Title>
+          <Title>A Data Analyst / Engineer</Title>
         </div>
       </Wrapper>
     </Background>
