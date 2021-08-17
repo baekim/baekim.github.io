@@ -1,7 +1,7 @@
 ---
 date: '2021-08-09'
 title: '[Coursera] What is Data Science Quiz'
-categories: ['IBM Professional Certificate', 'Data Science']
+categories: ['Coursera', 'IBM Professional Certificate', 'Data Science']
 summary: 'What is Data Science Quiz'
 thumbnail: './images/coursera_IBM_data_science.png'
 ---
