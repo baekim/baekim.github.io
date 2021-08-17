@@ -86,7 +86,7 @@ thumbnail: './images/coursera_IBM_data_science.png'
 
 - <span style='color: red'>True</span>
 - False
-  
+
 <br/>📌 When data are missing in a systematic way, you can simply extrapolate the data or impute the missing data by filling in the average of the values around the missing data.
 
 - True
@@ -99,19 +99,19 @@ thumbnail: './images/coursera_IBM_data_science.png'
 - <span style='color: red'>Sir Frances Galton</span>
 - Sir Isaac Newton
 - Blaise Pascal
-  
+
 <br/>📌 The author discovered that houses located more than 2.5 kms to shopping centres sold for less than the rest.
 
 - True.
 - <span style='color: red'>False.</span>
-  
+
 <br/>📌 Based on the reading, which of the following are questions that can be put to regression analysis?
 
 - <span style='color: red'>Do homes with brick exterior sell for less than homes with stone exterior?</span>
 - What is the impact of lot size on housing price?
 - What are typical land taxes in a house sale?
 - Do homes with brick exterior sell in rural areas?
-  
+
 <br/>📌 Regression is a statistical technique developed by Sir Frances Galton.
 
 - True.
@@ -168,7 +168,7 @@ thumbnail: './images/coursera_IBM_data_science.png'
 <br/>📌 Adding a list of references and an acknowledgment section are examples of housekeeping, according to the author.
 - False.
 - <span style='color: red'>True.</span>
-  
+
 <br/>📌 The results section is where you craft your main arguments and present your conclusion.
 
 - True
@@ -180,12 +180,12 @@ thumbnail: './images/coursera_IBM_data_science.png'
 - The conclusion.
 - The methods used.
 - R Squared.
-  
+
 <br/>📌 Regardless of the length of the final deliverable, the author recommends that it includes a cover page, table of contents, executive summary, a methodology section, and a discussion section.
 
 - <span style='color: red'>True.</span>
 - False.
-  
+
 <br/>📌 An introductory section is always helpful in:
 
 - <span style='color: red'>Presenting the statistical calculations.</span>
@@ -214,7 +214,7 @@ thumbnail: './images/coursera_IBM_data_science.png'
 - Microsoft
 - Facebook
 - IBM
-  
+
 <br/>📌 According to the Module 1 reading “What Makes Someone a Data Scientist”, the author defines a data scientist as someone who finds solutions to problems by analyzing data using appropriate tool and then tells stories to communicate their finding to the relevant stakeholders.
 
 - False.
