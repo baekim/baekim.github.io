@@ -24,7 +24,7 @@ interface PostItemProps {
 const ThumbnailImage = styled(Img)`
   width: 150px;
   height: 100px;
-  border-radius: 10px;
+  // border-radius: 10px;
 `;
 
 // const PostItemWrapper = styled(Link)`
@@ -49,16 +49,18 @@ const PostItemWrapper = styled(Link)`
   display: grid;
   grid-template-columns: 170px auto;
   grid-template-rows: auto;
-  padding: 5px;
+  // padding: 5px;
 
-  border-spacing: 5px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  // border-spacing: 5px;
+  // border-radius: 10px;
+  // box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0.25, 0.3, 0.35, 0.5);
   transition: 0.3s box-shadow;
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 2px rgba(0.25, 0.3, 0.35, 0.2);
   }
 `;
 
