@@ -52,15 +52,16 @@ const PostItemWrapper = styled(Link)`
   // padding: 5px;
 
   // border-spacing: 5px;
-  // border-radius: 10px;
+  // border-radius: 5px;
   // box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
   // box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0.25, 0.3, 0.35, 0.5);
+  border: 1px solid rgba(0.25, 0.3, 0.35, 0.2);
   transition: 0.3s box-shadow;
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 0 0 2px rgba(0.25, 0.3, 0.35, 0.2);
+    border: none;
+    box-shadow: 0 0 1px 3px rgba(0, 128, 210, 0.8);
   }
 `;
 
@@ -111,6 +112,9 @@ const Date = styled.div`
   color: #3c4754;
   margin-top: 12px;
   margin-left: 1px;
+  padding-left: 5px;
+  margin-bottom: 3px;
+  border-left: 5px solid purple;
 `;
 
 // const Category = styled.div`
@@ -127,16 +131,17 @@ const Category = styled.div`
   font-family: Arial;
   flex-wrap: wrap;
   margin-left: -5px;
-  margin-top: 5px;
+  margin-top: 3px;
 `;
 
 const CategoryItem = styled.div`
   margin: 2.5px 5px;
-  padding: 3px 5px;
-  border-radius: 3px;
+  padding: 4px 5px;
+  // border-radius: 3px;
   background: #3c4754;
   font-family: Arial;
-  font-size: 14px;
+  // font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   color: white;
 `;
