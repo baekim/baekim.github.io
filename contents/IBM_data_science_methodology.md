@@ -1,5 +1,5 @@
 ---
-date: '2021-08-17'
+date: '2021-08-20'
 title: '[Coursera] Data Science Methodology Quiz'
 categories: ['Coursera', 'IBM Professional Certificate', 'Data Science']
 summary: 'Data Science Methodology Quiz'
