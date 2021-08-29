@@ -1,0 +1,966 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.e53586a225ffdde20c86.css" id="gatsby-global-css">code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#ccc;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 3.6.2"/><title data-react-helmet="true"></title><meta data-react-helmet="true" name="description"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1.0"/><meta data-react-helmet="true" http-equiv="Content-Type" content="text/html;charset=UTF-8"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:title"/><meta data-react-helmet="true" property="og:description"/><meta data-react-helmet="true" property="og:image"/><meta data-react-helmet="true" property="og:url"/><meta data-react-helmet="true" property="og:site_name"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title"/><meta data-react-helmet="true" name="twitter:description"/><meta data-react-helmet="true" name="twitter:image"/><meta data-react-helmet="true" name="twitter:site" content="@username"/><meta data-react-helmet="true" name="twitter:creator" content="@username"/><meta data-react-helmet="true" name="google-site-verification" content="OaO6k-mksvth1OeDhL3fgi_T17XLIfilxc5YENgPzdI"/><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/><link rel="canonical" href="https://baekim.github.io/IBM_data_science_python_for_data_science_ai_d/" data-baseprotocol="https:" data-basehost="baekim.github.io"/><link as="script" rel="preload" href="/webpack-runtime-edb46941e208cfccc3de.js"/><link as="script" rel="preload" href="/framework-c96300279e079ab009d0.js"/><link as="script" rel="preload" href="/app-de446a2a54f6ef966eff.js"/><link as="script" rel="preload" href="/cb1608f2-a2b9d154d9bc2051201f.js"/><link as="script" rel="preload" href="/d0dcf9c1039535d44ee74defc829dfbf62dac3c5-1e80fc2283b2a8b51ae4.js"/><link as="script" rel="preload" href="/component---src-templates-post-template-tsx-dba291b8d9c28c9493d0.js"/><link as="fetch" rel="preload" href="/page-data/IBM_data_science_python_for_data_science_ai_d/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><style data-emotion="css 13ku56z">.css-13ku56z{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;}</style><main class="css-13ku56z e1strnqo0"><style data-emotion="css-global 1fjbsoa">@import url('<https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap>');*{padding:0;margin:0;box-sizing:border-box;font-family:'Nanum Myeongjo',serif;}html,body,#___gatsby{height:100%;}a,a:hover{color:inherit;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;}</style><style data-emotion="css 16cz9yp">.css-16cz9yp{position:relative;width:100%;height:400px;}@media (max-width: 768px){.css-16cz9yp{height:300px;}}</style><div class="css-16cz9yp e1opi4mu5"><style data-emotion="css 1bjn9yo">.css-1bjn9yo{z-index:-1;width:100%;height:400px;object-fit:cover;-webkit-filter:brightness(0.25);filter:brightness(0.25);}@media (max-width: 768px){.css-1bjn9yo{height:300px;}}</style><div class="css-1bjn9yo e1opi4mu4 gatsby-image-wrapper" style="position:absolute;overflow:hidden"><div aria-hidden="true" style="width:100%;padding-bottom:51%"></div><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAKCAYAAABWiWWfAAAACXBIWXMAAAeJAAAHiQH5c1i9AAABbUlEQVQoz31SS0sCURidIgiRVr0ss6RWbdoEvTYRPVZRmZpR2aJ8VxAUFBqRuSkKin5CgYtWQdG+fzDjOHfKUXOVodBfOHGvkw6jtjic7z6+w/n4DsetJFCGU2DcQOFSWVtrWPu/DL0Q4yW+BBsPblkAt0iZr9zTs12oFtQ7a1pNoH9XZugLyej0EgwdpmD2EwzsvTMM7n+gZTMJzlHHGbVPXdDmcDyPSDyPy6cCoo/fuHku4PaliIe3Hxzcf+HutYixsAJugUejK1HfGeW2bYmJdngkdPsJjO4kTF4Ck48w5/TNsCHWcUZFnILqjkfzmgj7dQ6jYQXDRylMnKQZjxwrGI8oMLpF5ootQu2tOaYlIGPqLIP5i09MnqYxG8tiOpphd3OxLGxXOcycZ2DdkStLqDmmQ4BhXYQ5QNAblNETILAES0to90jo8hFWW0MyWrek/8f8E2SR0ILGg0Gtbbpo6MesCq0OXI2zPrS/2FGu3TV67bIAAAAASUVORK5CYII=" alt="thumbnail" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source type='image/webp' srcset="/static/4bf5dcea92e8a021df3747bf6bcac774/8444f/coursera_IBM_data_science.webp 200w,
+/static/4bf5dcea92e8a021df3747bf6bcac774/42fc5/coursera_IBM_data_science.webp 400w,
+/static/4bf5dcea92e8a021df3747bf6bcac774/78c94/coursera_IBM_data_science.webp 523w" sizes="(max-width: 523px) 100vw, 523px" /><source srcset="/static/4bf5dcea92e8a021df3747bf6bcac774/a9f05/coursera_IBM_data_science.png 200w,
+/static/4bf5dcea92e8a021df3747bf6bcac774/23840/coursera_IBM_data_science.png 400w,
+/static/4bf5dcea92e8a021df3747bf6bcac774/b2a60/coursera_IBM_data_science.png 523w" sizes="(max-width: 523px) 100vw, 523px" /><img loading="lazy" sizes="(max-width: 523px) 100vw, 523px" srcset="/static/4bf5dcea92e8a021df3747bf6bcac774/a9f05/coursera_IBM_data_science.png 200w,
+/static/4bf5dcea92e8a021df3747bf6bcac774/23840/coursera_IBM_data_science.png 400w,
+/static/4bf5dcea92e8a021df3747bf6bcac774/b2a60/coursera_IBM_data_science.png 523w" src="/static/4bf5dcea92e8a021df3747bf6bcac774/b2a60/coursera_IBM_data_science.png" alt="thumbnail" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><style data-emotion="css 9o6cws">.css-9o6cws{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;font-family:Arial;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:768px;height:100%;margin:0 auto;padding:60px 0;color:#ffffff;}</style><div class="css-9o6cws e1st1jau3"><style data-emotion="css 1ceuvtj">.css-1ceuvtj{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#ffffff;color:#000000;font-size:22px;cursor:pointer;box-shadow:0 0 10px rgba(0, 0, 0, 0.3);}</style><div class="css-1ceuvtj e1st1jau2"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-left" class="svg-inline--fa fa-arrow-left fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z"></path></svg></div><style data-emotion="css z1ugjh">.css-z1ugjh{display:-webkit-box;overflow:hidden;overflow-wrap:break-word;margin-top:auto;text-overflow:ellipsis;white-space:normal;-webkit-line-clamp:2;-webkit-box-orient:vertical;font-family:Arial;font-size:45px;font-weight:800;}</style><div class="css-z1ugjh e1st1jau1">[Coursera] Python for Data Science, AI &amp; Development</div><style data-emotion="css tqjj6e">.css-tqjj6e{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:10px;font-family:Arial;font-size:18px;font-weight:700;}</style><div class="css-tqjj6e e1st1jau0"><div style="font-family:Arial">Coursera / IBM Professional Certificate / Data Science</div><div style="font-family:Arial">2021.08.26.</div></div></div></div><style data-emotion="css 825y69">.css-825y69{font-family:Arial;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;width:768px;margin:0 auto;padding:100px 0;word-break:break-all;line-height:1.8;font-family:Arial;font-size:16px;font-weight:400;}.css-825y69 p{font-family:Arial;padding:3px 0;}.css-825y69 li{font-family:Arial;}.css-825y69 h1,.css-825y69 h2,.css-825y69 h3{font-family:Arial;font-weight:800;margin-bottom:10px;}.css-825y69 *+h1,.css-825y69 *+h2,.css-825y69 *+h3{margin-top:30px;}.css-825y69 hr+h1,.css-825y69 hr+h2,.css-825y69 hr+h3{margin-top:0;}.css-825y69 h1{font-family:Arial;font-size:30px;}.css-825y69 h2{font-family:Arial;font-size:25px;}.css-825y69 h3{font-family:Arial;font-size:20px;}.css-825y69 h4{font-family:Arial;}.css-825y69 blockquote{margin:30px 0;padding:5px 15px;border-left:2px solid #000000;font-family:Arial;font-weight:800;}.css-825y69 ol{margin-left:20px;line-height:1.8;}.css-825y69 ul{margin-left:20px;line-height:1.8;}.css-825y69 li{margin-top:10px;margin-bottom:10px;font-family:Arial;margin-left:20px;line-height:1.8;}.css-825y69 hr{border:1px solid #000000;margin:50px 0;}.css-825y69 table{margin-right:auto;border-spacing:0;border-right:1px solid black;}.css-825y69 th{font-family:Arial;padding:3px 10px;background-color:#d1ecf1;border-top:1px solid black;border-bottom:1px solid black;border-left:1px solid black;}.css-825y69 td{font-family:Arial;padding:3px 10px;border-left:1px solid black;border-bottom:1px solid black;}.css-825y69 a{font-family:Arial;color:#4263eb;-webkit-text-decoration:underline;text-decoration:underline;}.css-825y69 pre[class*='language-']{margin:30px 0;padding:15px;font-family:Arial;font-size:15px;}.css-825y69 pre[class*='language-']::-webkit-scrollbar-thumb{background:rgba(255, 255, 255, 0.5);border-radius:3px;}.css-825y69 code [class*='language-']{tab-size:2;font-family:Arial;font-size:15px;}.css-825y69 span{font-family:Arial;tab-size:2;}.css-825y69 .text{font-family:Arial;}@media (max-width: 768px){.css-825y69{width:100%;padding:80px 20px;line-height:1.6;font-family:Arial;font-size:14px;}.css-825y69 h1{font-family:Arial;font-size:23px;}.css-825y69 h2{font-family:Arial;font-size:20px;}.css-825y69 h3{font-family:Arial;font-size:17px;}.css-825y69 h4{font-family:Arial;}.css-825y69 img{width:100%;}.css-825y69 hr{font-family:Arial;margin:20px 0;}}</style><div class="css-825y69 e1ijh0y10"><h3>Quiz</h3>
+<p><br/>📌 What is the result of the following operation:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token number">11</span><span class="token operator">//</span><span class="token number">2</span></code></pre></div>
+<ul>
+<li>5.5</li>
+<li><span style='font-weight: bolder'>5</span></li>
+</ul>
+<p><br/>📌 What is the value of x after the following is run:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">x<span class="token operator">=</span><span class="token number">4</span>
+x<span class="token operator">=</span>x<span class="token operator">/</span><span class="token number">2</span> </code></pre></div>
+<ul>
+<li>4.0</li>
+<li><span style='font-weight: bolder'>2.0</span></li>
+</ul>
+<p><br/>📌 What is the output of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"AB\nC\nDE"</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>ABC<br/>DE</li>
+<li>
+<span style='font-weight: bolder'>
+  AB<br/>CD<br/>E</span>
+</li>
+<li>AB<br/>C<br/>DE</li>
+</ul>
+<p><br/>📌 What is the result of following?
+<br/>If you are unsure, copy and paste the code into Jupyter Notebook and check.</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token string">"hello Mike"</span><span class="token punctuation">.</span>find<span class="token punctuation">(</span><span class="token string">"Mike"</span><span class="token punctuation">)</span> </code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>6</span></li>
+<li>6, 7, 8</li>
+<li>5</li>
+</ul>
+<p><br/>📌 What is the value of x after the following lines of code?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">x<span class="token operator">=</span><span class="token number">2</span>
+x<span class="token operator">=</span>x<span class="token operator">+</span><span class="token number">2</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>4</span></li>
+<li>2</li>
+</ul>
+<p><br/>📌 What is the result of the following operation:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token number">3</span><span class="token operator">+</span><span class="token number">2</span><span class="token operator">*</span><span class="token number">2</span></code></pre></div>
+<ul>
+<li>3</li>
+<li><span style='font-weight: bolder'>7</span></li>
+<li>9</li>
+</ul>
+<p><br/>📌 What is the result of the following code segment:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token builtin">type</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token number">12.3</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>int</span></li>
+<li>str</li>
+<li>float</li>
+</ul>
+<p><br/>📌 What is the result of the following code segment:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token builtin">int</span><span class="token punctuation">(</span><span class="token boolean">False</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>1</li>
+<li><span style='font-weight: bolder'>0</span></li>
+<li>error</li>
+</ul>
+<p><br/>📌 In Python, what is the result of the following operation:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token string">'1'</span><span class="token operator">+</span><span class="token string">'2'</span></code></pre></div>
+<ul>
+<li>3</li>
+<li>‘3’</li>
+<li><span style='font-weight: bolder'>‘12’</span></li>
+</ul>
+<p><br/>📌 Given <code class="language-text">myvar = 'hello'</code>, how would you return myvar as uppercase?</p>
+<ul>
+<li>len(myvar)</li>
+<li>myvar.find(‘hello’)</li>
+<li><span style='font-weight: bolder'>myvar.upper()</span></li>
+</ul>
+<p><br/>📌 What is the result of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token builtin">str</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token builtin">str</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>‘11’</span></li>
+<li>2</li>
+</ul>
+<p><br/>📌 What is the result of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token string">"ABC"</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">"AB"</span><span class="token punctuation">,</span> <span class="token string">"ab"</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>‘abC’ </span></li>
+<li>‘ABc’</li>
+</ul>
+<p><br/>📌 In Python 3, what is the type of the variable x after the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">x<span class="token operator">=</span><span class="token number">2</span><span class="token operator">/</span><span class="token number">2</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>float</span></li>
+<li>int</li>
+</ul>
+<p><br/>📌 Consider the following tuple:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">say_what<span class="token operator">=</span><span class="token punctuation">(</span><span class="token string">'say'</span><span class="token punctuation">,</span><span class="token string">' what'</span><span class="token punctuation">,</span> <span class="token string">'you'</span><span class="token punctuation">,</span> <span class="token string">'will'</span><span class="token punctuation">)</span> </code></pre></div>
+<p>what is the result of the following <code class="language-text">say_what[-1]</code></p>
+<ul>
+<li><span style='font-weight: bolder'>‘will’</span></li>
+<li>‘say’</li>
+<li>’ what’</li>
+<li>‘you’</li>
+</ul>
+<p><br/>📌 Consider the following tuple <code class="language-text">A=(1,2,3,4,5)</code>. What is the result of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">A<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span></code></pre></div>
+<ul>
+<li>(3, 4,5)</li>
+<li>(2, 3, 4,5)</li>
+<li><span style='font-weight: bolder'>(2, 3, 4)</span></li>
+</ul>
+<p><br/>📌 Consider the following tuple <code class="language-text">A=(1,2,3,4,5)</code>, what is the result of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token builtin">len</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>6</li>
+<li><span style='font-weight: bolder'>5</span></li>
+<li>4</li>
+</ul>
+<p><br/>📌 Consider the following list <code class="language-text">B=[1,2,[3,'a'],[4,'b']]</code>, what is the result of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">B<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span></code></pre></div>
+<ul>
+<li>“c”</li>
+<li>[4,“b”]</li>
+<li><span style='font-weight: bolder'>“b”</span></li>
+</ul>
+<p><br/>📌 What is the result of the following operation?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token operator">+</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span></code></pre></div>
+<ul>
+<li>TypeError</li>
+<li><span style='font-weight: bolder'>[1, 2, 3, 1, 1, 1]</span></li>
+<li>[2,3,4]</li>
+</ul>
+<p><br/>📌 What is the length of the list <code class="language-text">A = [1]</code> after the following operation:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">A<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>2</span></li>
+<li>6</li>
+<li>5</li>
+</ul>
+<p><br/>📌 What is the result of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token string">"Hello Mike"</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>[“H”]</li>
+<li>[“HelloMike”]</li>
+<li><span style='font-weight: bolder'>[“Hello”,“Mike”]</span></li>
+</ul>
+<p><br/>📌 What are the keys of the following dictionary:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token punctuation">{</span><span class="token string">"a"</span><span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">"b"</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li>1,2</li>
+<li><span style='font-weight: bolder'>“a”,“b”</span></li>
+</ul>
+<p><br/>📌 Consider the following Python Dictionary: <code class="language-text">Dict={"A":1,"B":"2","C":[3,3,3],"D":(4,4,4),'E':5,'F':6}</code> What is the result of the following operation:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">Dict<span class="token punctuation">[</span><span class="token string">"D"</span><span class="token punctuation">]</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>(4, 4, 4)</span></li>
+<li>[3,3,3]</li>
+<li>1</li>
+</ul>
+<p><br/>📌 Consider the following set: <code class="language-text">{"A","A"}</code>, what will the result be when the set is created?</p>
+<ul>
+<li><span style='font-weight: bolder'>{“A”} </span></li>
+<li>{“A”,“A”}</li>
+</ul>
+<p><br/>📌 What is the result of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token builtin">type</span><span class="token punctuation">(</span><span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>set</span></li>
+<li>list</li>
+</ul>
+<p><br/>📌  What method do you use to add an element to a set?</p>
+<ul>
+<li>append</li>
+<li><span style='font-weight: bolder'>add</span></li>
+<li>Extend</li>
+</ul>
+<p><br/>📌 What is the result of the following operation:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token punctuation">{</span><span class="token string">'a'</span><span class="token punctuation">,</span> <span class="token string">'b'</span><span class="token punctuation">}</span> <span class="token operator">&amp;</span><span class="token punctuation">{</span><span class="token string">'a'</span><span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li>{‘a’, ‘b’}</li>
+<li><span style='font-weight: bolder'>{‘a’}</span></li>
+</ul>
+<p><br/>📌 Consider the tuple <code class="language-text">A=((11,12),[21,22])</code>, that contains a tuple and list. What is the result of the following operation</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">A<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span></code></pre></div>
+<ul>
+<li>((11,12),[21,22])</li>
+<li>(11,12)</li>
+<li><span style='font-weight: bolder'>[21,22]</span></li>
+</ul>
+<p><br/>📌 Consider the tuple <code class="language-text">A=((1),[2,3],[4])</code>, that contains a tuple and list. What is the result of the following operation</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">A<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>4</span></li>
+<li>[4]</li>
+<li>1</li>
+</ul>
+<p><br/>📌 True or false: after applying the following method, <code class="language-text">L.append(['a','b'])</code>, the following list will only be one element longer.</p>
+<ul>
+<li><span style='font-weight: bolder'>True</span></li>
+<li>False</li>
+</ul>
+<p><br/>📌 Consider the following list <code class="language-text">A=["hard rock", 10, 1.2]</code> What will list A contain affter the following command is run:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">del</span><span class="token punctuation">(</span>A<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>[10,1.2]</li>
+<li><span style='font-weight: bolder'>[“hard rock”,1.2]</span></li>
+<li>[“hard rock”,10]</li>
+</ul>
+<p><br/>📌 What is the syntax to clone the list A and assign the result to list B ?</p>
+<ul>
+<li>B=A</li>
+<li><span style='font-weight: bolder'>B=A[:]</span></li>
+</ul>
+<p><br/>📌 Consider the following dictionary:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token punctuation">{</span> <span class="token string">"The Bodyguard"</span><span class="token punctuation">:</span><span class="token string">"1992"</span><span class="token punctuation">,</span> <span class="token string">"Saturday Night Fever"</span><span class="token punctuation">:</span><span class="token string">"1977"</span><span class="token punctuation">}</span></code></pre></div>
+<p>select the values:</p>
+<ul>
+<li><span style='font-weight: bolder'>“1977”</span></li>
+<li><span style='font-weight: bolder'>“1992”</span></li>
+<li>“The Bodyguard”</li>
+<li>“Saturday Night Fever”</li>
+</ul>
+<p><br/>📌 The variable release_year_dict is a Python Dictionary, what is the result of applying the following method:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">release_year_dict<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>retrieve the keys of the dictionary</li>
+<li><span style='font-weight: bolder'>retrieves, the values of the dictionary</span></li>
+</ul>
+<p><br/>📌 Consider the Set: <code class="language-text">V={'A','B'}</code>, what is the result of <code class="language-text">V.add('C')</code>?</p>
+<ul>
+<li><span style='font-weight: bolder'>{‘A’,‘B’,‘C’}</span></li>
+<li>{‘A’,‘B’}</li>
+<li>error</li>
+</ul>
+<p><br/>📌 What is the result of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token string">'1'</span> <span class="token keyword">in</span> <span class="token punctuation">{</span><span class="token string">'1'</span><span class="token punctuation">,</span><span class="token string">'2'</span><span class="token punctuation">}</span></code></pre></div>
+<ul>
+<li>False</li>
+<li><span style='font-weight: bolder'>True</span></li>
+</ul>
+<p><br/>📌 what is the result of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token number">1</span><span class="token operator">=</span><span class="token number">2</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>SyntaxError:can’t assign to literal</span></li>
+<li>False</li>
+<li>True</li>
+</ul>
+<p><br/>📌 What is the output of the following code segment:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">i<span class="token operator">=</span><span class="token number">6</span>
+i<span class="token operator">&lt;</span><span class="token number">5</span> </code></pre></div>
+<ul>
+<li>
+<p>True</p>
+</li>
+<li>
+<p><span style='font-weight: bolder'>False</span></p>
+</li>
+<li>
+<p>SyntaxError: can’t assign to literal</p>
+</li>
+</ul>
+<p><br/>📌 What is the result of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token number">5</span><span class="token operator">!=</span><span class="token number">5</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>False</span></li>
+<li>True</li>
+</ul>
+<p><br/>📌 What is the output of the following code segment:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token string">'a'</span><span class="token operator">==</span><span class="token string">'A'</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>False</span></li>
+<li>True</li>
+</ul>
+<p><br/>📌 in the video, if <code class="language-text">age=18</code> what would be the result</p>
+<ul>
+<li><span style='font-weight: bolder'>move on</span></li>
+<li>you can enter</li>
+</ul>
+<p><br/>📌 in the video what would be the result if we set the variable age as follows:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">age<span class="token operator">=</span> <span class="token operator">-</span><span class="token number">10</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>go see Meat Loaf<br/>move on</span></li>
+<li>you can enter<br/>move on</li>
+</ul>
+<p><br/>📌 what is the result of the following: True or False</p>
+<ul>
+<li><span style='font-weight: bolder'>True, an or statement is only False if all the Boolean values are False</span></li>
+<li>False</li>
+</ul>
+<p><br/>📌 what will be the output of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">:</span>     
+    <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span> </code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>0<br/>1<br/>2</span></li>
+<li>0<br/>1<br/>2<br/>3</li>
+</ul>
+<p><br/>📌 what is the output of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span><span class="token string">'B'</span><span class="token punctuation">,</span><span class="token string">'C'</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token operator">+</span><span class="token string">'A'</span><span class="token punctuation">)</span> </code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>AA<br/>BA<br/>CA</span></li>
+<li>A<br/>B<br/>C</li>
+</ul>
+<p><br/>📌 what is the output of the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">for</span> i<span class="token punctuation">,</span> x <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span><span class="token string">'B'</span><span class="token punctuation">,</span><span class="token string">'C'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>    
+    <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> x<span class="token punctuation">)</span> </code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>0 A<br/>1 B<br/>2 C</span></li>
+<li>AA<br/>BB<br/>CC</li>
+</ul>
+<p><br/>📌 What does the following function return:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span><span class="token string">'B'</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>3</span></li>
+<li>2</li>
+<li>4</li>
+</ul>
+<p><br/>📌 What does the following function return:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token builtin">len</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>1</span></li>
+<li>0</li>
+<li>3</li>
+</ul>
+<p><br/>📌 What is the value of list L after the following code segment is run :</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">L<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span>
+<span class="token builtin">sorted</span><span class="token punctuation">(</span>L<span class="token punctuation">)</span> </code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>L:[1,3,2]</span></li>
+<li>L:[1,2,3]</li>
+<li>L:[0,0,0]</li>
+</ul>
+<p><br/>📌 From the video what is the value of c after the following:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">c<span class="token operator">=</span>add1<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+c<span class="token operator">=</span>add1<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> </code></pre></div>
+<ul>
+<li>
+<p>3</p>
+</li>
+<li>
+<p><span style='font-weight: bolder'>11</span></p>
+</li>
+<li>
+<p>14</p>
+</li>
+</ul>
+<p><br/>📌 what is the output of the following lines of code:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">def</span> Print<span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">:</span>   
+    <span class="token keyword">for</span> a <span class="token keyword">in</span> A<span class="token punctuation">:</span> 
+        <span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token operator">+</span><span class="token string">'1'</span><span class="token punctuation">)</span>
+
+Print<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'a'</span><span class="token punctuation">,</span><span class="token string">'b'</span><span class="token punctuation">,</span><span class="token string">'c'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> </code></pre></div>
+<ul>
+<li>a<br/>b<br/>c</li>
+<li><span style='font-weight: bolder'>a1<br/>b1<br/>C1</span></li>
+<li>a1</li>
+</ul>
+<p><br/>📌 Why do we use exception handlers?</p>
+<ul>
+<li><span style='font-weight: bolder'>Catch errors within a program</span></li>
+<li>Read a file</li>
+<li>Write a file</li>
+<li>Terminate a program</li>
+</ul>
+<p><br/>📌 What is the purpose of a try…except statement?</p>
+<ul>
+<li>Executes the code block only if a certain condition exists</li>
+<li>Crash a program when errors occur</li>
+<li><span style='font-weight: bolder'>Catch and handle exceptions when an error occurs</span></li>
+<li>Only executes if one condition is true</li>
+</ul>
+<p><br/>📌 What is the type of the following?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token punctuation">[</span><span class="token string">"a"</span><span class="token punctuation">]</span> </code></pre></div>
+<ul>
+<li>
+<p>str</p>
+</li>
+<li>
+<p><span style='font-weight: bolder'>list</span></p>
+</li>
+</ul>
+<p><br/>📌 What does a method do to an object?</p>
+<ul>
+<li><span style='font-weight: bolder'>Changes or interacts with the object</span></li>
+<li>Returns a new values</li>
+</ul>
+<p><br/>📌 We create the object:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">Circle<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">'blue'</span><span class="token punctuation">)</span></code></pre></div>
+<p>What is the color attribute set to?</p>
+<ul>
+<li>2</li>
+<li><span style='font-weight: bolder'>‘blue’</span></li>
+</ul>
+<p><br/>📌 What is the radius attribute after the following code block is run?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">RedCircle<span class="token operator">=</span>Circle<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token string">'red'</span><span class="token punctuation">)</span>
+RedCircle<span class="token punctuation">.</span>radius<span class="token operator">=</span><span class="token number">1</span> </code></pre></div>
+<ul>
+<li>10</li>
+<li><span style='font-weight: bolder'>1</span></li>
+<li>‘red’</li>
+</ul>
+<p><br/>📌 What is the radius attribute after the following code block is run?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">BlueCircle<span class="token operator">=</span>Circle<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token string">'blue'</span><span class="token punctuation">)</span>
+BlueCircle<span class="token punctuation">.</span>add_radius<span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> </code></pre></div>
+<ul>
+<li>10</li>
+<li>20</li>
+<li><span style='font-weight: bolder'>30</span></li>
+</ul>
+<p><br/>📌 What is the output of the following code?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">x<span class="token operator">=</span><span class="token string">"Go"</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>x<span class="token operator">==</span><span class="token string">"Go"</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Go '</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Stop'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Mike'</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>Go Mike</span></li>
+<li>Mike</li>
+<li>Stop Mike</li>
+</ul>
+<p><br/>📌 What is the result of the following lines of code?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">x<span class="token operator">=</span><span class="token number">1</span>
+x<span class="token operator">></span><span class="token operator">-</span><span class="token number">5</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>True</span></li>
+<li>False</li>
+</ul>
+<p><br/>📌 What is the output of the following few lines of code?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">x<span class="token operator">=</span><span class="token number">5</span>
+<span class="token keyword">while</span><span class="token punctuation">(</span>x<span class="token operator">!=</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+  x<span class="token operator">=</span>x<span class="token operator">-</span><span class="token number">1</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>5<br/>4<br/>3</span></li>
+<li>5<br/>4<br/>3<br/>2</li>
+<li>the program will never leave the loop</li>
+</ul>
+<p><br/>📌 What is the result of running the following lines of code ?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Points</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> __init__<span class="token punctuation">(</span>self<span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>x<span class="token operator">=</span>x
+        self<span class="token punctuation">.</span>y<span class="token operator">=</span>y
+    <span class="token keyword">def</span> print_point<span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'x='</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>x<span class="token punctuation">,</span><span class="token string">' y='</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>y<span class="token punctuation">)</span>
+
+p1<span class="token operator">=</span>Points<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>
+p1<span class="token punctuation">.</span>print_point<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>
+<p>x=1;</p>
+</li>
+<li>
+<p><span style='font-weight: bolder'>x=1 y=2</span></p>
+</li>
+<li>
+<p>y=2</p>
+</li>
+</ul>
+<p><br/>📌 What is the output of the following few lines of code?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">for</span> i<span class="token punctuation">,</span>x <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span><span class="token string">'B'</span><span class="token punctuation">,</span><span class="token string">'C'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">,</span>x<span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>1 A<br/>2 B<br/>3 C</span></li>
+<li>0 A<br/>1 B<br/>2 C<br/></li>
+<li>0 AA<br/>1 BB<br/>2 CC</li>
+</ul>
+<p><br/>📌 What is the result of running the following lines of code ?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Points</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> __init__<span class="token punctuation">(</span>self<span class="token punctuation">,</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>x<span class="token operator">=</span>x
+        self<span class="token punctuation">.</span>y<span class="token operator">=</span>y
+    <span class="token keyword">def</span> print_point<span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'x='</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>x<span class="token punctuation">,</span><span class="token string">' y='</span><span class="token punctuation">,</span>self<span class="token punctuation">.</span>y<span class="token punctuation">)</span>
+
+p2<span class="token operator">=</span>Points<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>
+p2<span class="token punctuation">.</span>x<span class="token operator">=</span><span class="token number">2</span>
+p2<span class="token punctuation">.</span>print_point<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>x=2 y=2</span></li>
+<li>x=1 y=2</li>
+<li>x=1 y=1</li>
+</ul>
+<p><br/>📌 Consider the function delta, when will the function return a value of 1?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">def</span> delta<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> x<span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">:</span>
+        y<span class="token operator">=</span><span class="token number">1</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        y<span class="token operator">=</span><span class="token number">0</span>
+    <span class="token keyword">return</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>When the input is anything but 0</li>
+<li>When the input is 1</li>
+<li>Never</li>
+<li><span style='font-weight: bolder'>When the input is 0</span></li>
+</ul>
+<p><br/>📌 What is the output of the following lines of code?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">a<span class="token operator">=</span><span class="token number">1</span>
+
+<span class="token keyword">def</span> do<span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    a<span class="token operator">=</span><span class="token number">100</span>
+    <span class="token keyword">return</span><span class="token punctuation">(</span>x<span class="token operator">+</span>a<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>do<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>2</li>
+<li><span style='font-weight: bolder'>101</span></li>
+<li>102</li>
+</ul>
+<p><br/>📌 Write a function name add that takes two parameter a and b, then return the output of a + b (Do not use any other variable! You do not need to run it. Only write the code about how you define it.)</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">def</span> add<span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> a <span class="token operator">+</span> b</code></pre></div>
+<p><br/>📌 Why is it best practice to have multiple except statements with each type of error labeled correctly?</p>
+<ul>
+<li>Ensure the error is caught so the program will terminate</li>
+<li><span style='font-weight: bolder'>In order to know what type of error was thrown and the location within the program</span></li>
+<li>To skip over certain blocks of code during execution</li>
+<li>It is not necessary to label errors</li>
+</ul>
+<p><br/>📌 What are the most common modes used when opening a file?</p>
+<ul>
+<li><span style='font-weight: bolder'>(a)ppend, (r)ead, (w)rite</span></li>
+<li>(a)ppend, (c)lose, (w)rite</li>
+<li>(a)ppend, (r)edline, (w)rite</li>
+<li>(s)ave, (r)ead, (w)rite</li>
+</ul>
+<p><br/>📌 What is the data attribute that will return the title of the file?</p>
+<ul>
+<li>File1.close()</li>
+<li>File1.mode</li>
+<li>File1.open()</li>
+<li><span style='font-weight: bolder'>File1.name</span></li>
+</ul>
+<p><br/>📌 What is the command that tells Python to begin a new line?</p>
+<ul>
+<li>\e</li>
+<li>\b</li>
+<li>\q</li>
+<li><span style='font-weight: bolder'>\n</span></li>
+</ul>
+<p><br/>📌 What attribute is used to input data into a file?</p>
+<ul>
+<li><span style='font-weight: bolder'>File1.write()</span></li>
+<li>File1.open()</li>
+<li>File1.close()</li>
+<li>File1.read()</li>
+</ul>
+<p><br/>📌 What python object do you cast to a dataframe?</p>
+<ul>
+<li>set</li>
+<li>tuple</li>
+<li><span style='font-weight: bolder'>Dictionary</span></li>
+</ul>
+<p><br/>📌 How would you access the first-row and first column in the dataframe df?</p>
+<ul>
+<li><span style='font-weight: bolder'>df.ix[0,0]</span></li>
+<li>df.ix[0,1]</li>
+<li>df.ix[1,0]</li>
+</ul>
+<p><br/>📌 What is the proper way to load a CSV file using pandas?</p>
+<ul>
+<li>pandas.from_csv(‘data.csv’)</li>
+<li>pandas.load_csv(‘data.csv’)</li>
+<li><span style='font-weight: bolder'>pandas.read_csv(‘data.csv’)</span></li>
+<li>pandas.import_csv(‘data.csv’)</li>
+</ul>
+<!-- <br/>📌 Use this dataframe to answer the question.
+
+How would you select the Genre disco? Select all that apply.
+
+- df.iloc[6, ‘genre’]
+- df.loc[6, 5]
+- <span style='font-weight: bolder'>df.iloc[6, 4]</span>
+- df.loc[‘Bee Gees’, ‘Genre’]
+
+<br/>📌 Use this dataframe to answer the question.
+
+Which will NOT evaluate to 20.6? Select all that apply.
+
+- df.iloc[4,5]
+- df.iloc[6,5]
+- <span style='font-weight: bolder'>df.loc[4,’Music Recording Sales’]</span>
+- <span style='font-weight: bolder'>df.iloc[6, ‘Music Recording Sales (millions)’]</span>
+
+<br/>📌 Use this dataframe to answer the question.
+
+How do we select Albums The Dark Side of the Moon to Their Greatest Hits (1971-1975)? Select all that apply.
+
+- df.iloc[2:5, ‘Album’]
+- df.loc[2:5, ‘Album’]
+- <span style='font-weight: bolder'>df.iloc[2:6, 1]</span>
+- df.loc[2:5, 1] -->
+<p><br/>📌 What is the Python library used for scientific computing and is a basis for Pandas?</p>
+<ul>
+<li>Tkinter</li>
+<li>Requests</li>
+<li>datetime</li>
+<li><span style='font-weight: bolder'>Numpy</span></li>
+</ul>
+<p><br/>📌 What attribute is used to retrieve the number of elements in an array?</p>
+<ul>
+<li><span style='font-weight: bolder'>a.size</span></li>
+<li>a.ndim</li>
+<li>a.shape</li>
+<li>a.dtype</li>
+</ul>
+<p><br/>📌 How would you change the first element to “10” in this array c:array([100,1,2,3,0])?</p>
+<ul>
+<li>c[2]=10</li>
+<li>c[1]=10</li>
+<li><span style='font-weight: bolder'>c[0]=10</span></li>
+<li>c[4]=10</li>
+</ul>
+<p><br/>📌 What attribute is used to return the number of dimensions in an array?</p>
+<ul>
+<li>
+<p><span style='font-weight: bolder'>a.ndim</span></p>
+</li>
+<li>
+<p>a.shape</p>
+</li>
+<li>
+<p>a.dtype</p>
+</li>
+<li>
+<p>a.size</p>
+</li>
+<li></li>
+</ul>
+<p><br/>📌 What is the result of the following lines of code?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">a<span class="token operator">=</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+b<span class="token operator">=</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+np<span class="token punctuation">.</span>dot<span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">)</span> </code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>0</span></li>
+<li>1</li>
+<li>array([1,1])</li>
+</ul>
+<p><br/>📌 How do you perform matrix multiplication on the numpy arrays A and B ?</p>
+<ul>
+<li>A</span>B</li>
+<li>A+B</li>
+<li><span style='font-weight: bolder'>np.dot(A,B)</span></li>
+</ul>
+<p><br/>📌 What values does the variable out take if the following lines of code are run?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">X<span class="token operator">=</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> 
+out<span class="token operator">=</span>X<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">]</span>
+out</code></pre></div>
+<ul>
+<li>array([2,2])</li>
+<li>array([1,0,1])</li>
+<li><span style='font-weight: bolder'>array([0,1])</span></li>
+</ul>
+<p><br/>📌 What is the value of Z after the following code is run?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">X<span class="token operator">=</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+Y<span class="token operator">=</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> 
+Z<span class="token operator">=</span>np<span class="token punctuation">.</span>dot<span class="token punctuation">(</span>X<span class="token punctuation">,</span>Y<span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>array([[2,1],[1,2]])</span></li>
+<li>array([[2,0],[1,0]])</li>
+<li>array([[3,1],[1,3] ])</li>
+</ul>
+<p><br/>📌 Consider the following text file: Example1.txt:
+This is line 1
+This is line 2
+This is line 3
+What is the output of the following lines of code?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"Example1.txt"</span><span class="token punctuation">,</span><span class="token string">"r"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> file1<span class="token punctuation">:</span>
+  
+    FileContent<span class="token operator">=</span>file1<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+    <span class="token keyword">print</span><span class="token punctuation">(</span>FileContent<span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>This is line 1</li>
+</ul>
+<p>This is line 2
+This is line 3</span></p>
+<ul>
+<li>This is line 1</li>
+<li>This</li>
+</ul>
+<p><br/>📌 Consider the following line of code:</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span>example1<span class="token punctuation">,</span><span class="token string">"r"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> file1<span class="token punctuation">:</span></code></pre></div>
+<p>What mode is the file object in?</p>
+<ul>
+<li>read</li>
+<li>write</li>
+<li>append</li>
+</ul>
+<p><br/>📌 What do the following lines of code do?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">"Example.txt"</span><span class="token punctuation">,</span><span class="token string">"w"</span><span class="token punctuation">)</span> <span class="token keyword">as</span> writefile<span class="token punctuation">:</span>  
+ writefile<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"This is line A\n"</span><span class="token punctuation">)</span>
+ writefile<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">"This is line B\n"</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>Read the file “Example.txt”</li>
+<li><span style='font-weight: bolder'>Write to the file “Example.txt”</span></li>
+<li>Append the file “Example.txt”</li>
+</ul>
+<p><br/>📌 Consider the dataframe df. How would you access the element in the 2nd row and 1st column?</p>
+<ul>
+<li><span style='font-weight: bolder'>df.iloc[1,0]</span></li>
+<li>df.iloc[2,1]</li>
+<li>df.iloc[0,1]</li>
+</ul>
+<p><br/>📌 In the lab, you learned you can also obtain a series from a dataframe df, select the correct way to assign the column with the header Length to a pandas series to the variable x.</p>
+<ul>
+<li><span style='font-weight: bolder'>x=df[‘Length’]</span></li>
+<li>x=df[[‘Length’]]</li>
+<li>x=df.[[‘Length’]]</li>
+</ul>
+<p><br/>📌 What does API stand for?</p>
+<ul>
+<li>Application Programming Interaction</li>
+<li><span style='font-weight: bolder'>Application Programming Interface</span></li>
+<li>Automatic Program Interaction</li>
+<li>Application Process Interface</li>
+</ul>
+<p><br/>📌 The chart used to plot the cryptocurrency data in the lab is a</p>
+<ul>
+<li><span style='font-weight: bolder'>Candlestick Chart</span></li>
+<li>Line Chart</li>
+<li>Pole Chart</li>
+<li>Point and Figure Chart</li>
+</ul>
+<p><br/>📌 What information are we trying to find for each day in the lab for the chart?</p>
+<ul>
+<li>Open (Last), High (Max), Low (Min), Close (First)</li>
+<li>Open (Max), High (First), Low (Last), Close (Min)</li>
+<li><span style='font-weight: bolder'>Open (First), High (Max), Low (Min), Close (Last)</span></li>
+<li>Open (Min), High (First), Low (Max), Close (Last)</li>
+</ul>
+<p><br/>📌 What is the function of “GET” in HTTP requests?</p>
+<ul>
+<li>Deletes a specific resource</li>
+<li>Sends data to create or update a resource</li>
+<li><span style='font-weight: bolder'>Carries the request to the client from the requestor</span></li>
+<li>Returns the response from the client to the requestor</li>
+</ul>
+<p><br/>📌 What does URL stand for?</p>
+<ul>
+<li>Uniform Request Location</li>
+<li><span style='font-weight: bolder'>Uniform Resource Locator</span></li>
+<li>Unilateral Resistance Locator</li>
+<li>Uniform Resource Learning</li>
+</ul>
+<p><br/>📌 What does the file extension “csv” stand for?</p>
+<ul>
+<li><span style='font-weight: bolder'>Comma Separated Values</span></li>
+<li>Comma Separation Valuations</li>
+<li>Common Separated Variables</li>
+<li>Comma Serrated Values</li>
+</ul>
+<p><br/>📌 What is webscraping?</p>
+<ul>
+<li><span style='font-weight: bolder'>The process to extract data from a particular website</span></li>
+<li>The process to display all data within a URL</li>
+<li>The process to describe communication options</li>
+<li>The process to request and retrieve information from a client</li>
+</ul>
+<p><br/>📌 What are the 3 parts to a response message?</p>
+<ul>
+<li><span style='font-weight: bolder'>Start or status line, header, and body</span></li>
+<li>Encoding, body, and cache</li>
+<li>Bookmarks, history, and security</li>
+<li>HTTP headers, blank line, and body</li>
+</ul>
+<p><br/>📌 What is the purpose of this line of code <code class="language-text">"table_row=table.find_all(name=’tr’)"</code> used in webscraping?</p>
+<ul>
+<li>It will find all of the data within the table marked with a tag “p”</li>
+<li>It will find all of the data within the table marked with a tag “a”</li>
+<li>It will find all of the data within the table marked with a tag “h1”</li>
+<li><span style='font-weight: bolder'>It will find all of the data within the table marked with a tag “tr”</span></li>
+</ul>
+<p><br/>📌 In what data structure do HTTP responses generally return?</p>
+<ul>
+<li>Tuples</li>
+<li>Nested Lists</li>
+<li><span style='font-weight: bolder'>JSON</span></li>
+<li>Lists</li>
+</ul>
+<p><br/>📌 The Python library we used to plot the chart in the lab is</p>
+<ul>
+<li>Pandas</li>
+<li><span style='font-weight: bolder'>MatPlotLib</span></li>
+<li>Plotly</li>
+<li>PyCoinGecko</li>
+</ul>
+<h3>Final Quiz</h3>
+<p><br/>📌 In Python what statement would print out the first two elements “Li” of “Lizz”?</p>
+<ul>
+<li>print(name[1:2])</li>
+<li><span style='font-weight: bolder'>print(name[0:2])</span></li>
+<li>print(name[2:0])</li>
+</ul>
+<p><br/>📌 If var = “01234567” what Python statement would print out only the odd elements?</p>
+<ul>
+<li>print(var[2::2])</li>
+<li><span style='font-weight: bolder'>print(var[1::2])</span></li>
+<li>print(var[3::1])</li>
+</ul>
+<p><br/>📌 Consider the string Name=”EMILY”, what statement would return the index of 0?</p>
+<ul>
+<li>Name.find(“I”)</li>
+<li>Name.find(“L”)</li>
+<li><span style='font-weight: bolder'>Name.find(“E”)</span></li>
+</ul>
+<p><br/>📌 In Python what can be either a positive or negative number but does not contain a decimal point?</p>
+<ul>
+<li>str</li>
+<li><span style='font-weight: bolder'>int</span></li>
+<li>float</li>
+</ul>
+<p><br/>📌 What following code segment would return a 3?</p>
+<ul>
+<li><span style='font-weight: bolder'>int(3.99)</span></li>
+<li>str(3.99)</li>
+<li>float(3.99)</li>
+</ul>
+<p><br/>📌 What following code segment would produce an output of “0”?</p>
+<ul>
+<li><span style='font-weight: bolder'>1//2</span></li>
+<li>1/2</li>
+</ul>
+<p><br/>📌 In Python 3, what is the type of the variable x after the following: x=2/2 ?</p>
+<ul>
+<li>int</li>
+<li><span style='font-weight: bolder'>float</span></li>
+</ul>
+<p><br/>📌 Whatdata type must have unique keys?</p>
+<ul>
+<li>Tuple</li>
+<li><span style='font-weight: bolder'>Dictionary</span></li>
+<li>List</li>
+</ul>
+<p><br/>📌 What will this code segment “A[0]” obtain from a list or tuple?</p>
+<ul>
+<li><span style='font-weight: bolder'>The first element of a list or tuple</span></li>
+<li>The third element of a list or tuple</li>
+<li>The second element of a list or tuple</li>
+</ul>
+<p><br/>📌 What does the split() method return from a list of words?</p>
+<ul>
+<li><span style='font-weight: bolder'>The list of words in a string separated by a delimiter</span></li>
+<li>The list of words in reverse order</li>
+<li>The list of words separated by a colon</li>
+<li>The list in one long string</li>
+</ul>
+<p><br/>📌 Tuples are:</p>
+<ul>
+<li><span style='font-weight: bolder'>Not mutable</span></li>
+<li>Unordered</li>
+<li>Not indexed</li>
+<li>Mutable</li>
+</ul>
+<p><br/>📌 What is a collection that is unordered, unindexed and does not allow duplicate members?</p>
+<ul>
+<li><span style='font-weight: bolder'>Set</span></li>
+<li>List</li>
+<li>Tuple</li>
+</ul>
+<p><br/>📌 What value of x will produce the following output?
+How are you?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">x<span class="token operator">=</span> 
+<span class="token keyword">if</span><span class="token punctuation">(</span>x<span class="token operator">!=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span> 
+ <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'How are you?'</span><span class="token punctuation">)</span> 
+<span class="token keyword">else</span><span class="token punctuation">:</span> 
+ <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Hi'</span><span class="token punctuation">)</span></code></pre></div>
+<ul>
+<li>x=“7”</li>
+<li>x=1</li>
+<li><span style='font-weight: bolder'>x=6</span></li>
+</ul>
+<p><br/>📌 Why is the “finally” statement used?</p>
+<ul>
+<li><span style='font-weight: bolder'>Execute the remaining code no matter the end result</span></li>
+<li>Only execute the remaining code if one condition is false</li>
+<li>Only execute the remaining code if no errors occur</li>
+<li>Only execute the remaining code if an error occurs</li>
+</ul>
+<p><br/>📌 Given the function add shown below, what does the following return?
+def add(x): return(x+x) add(‘1’)</p>
+<ul>
+<li>‘2’</li>
+<li>2</li>
+<li><span style='font-weight: bolder'>‘11’</span></li>
+</ul>
+<p><br/>📌 What function returns a sorted list?</p>
+<ul>
+<li><span style='font-weight: bolder'>sorted()</span></li>
+<li>lower()</li>
+<li>find()</li>
+<li>sort()</li>
+</ul>
+<p><br/>📌 What is the output of the following few lines of code?
+A=[‘1’,‘2’,‘3’] for a in A: print(2*a)</p>
+<ul>
+<li>2<br/>4<br/>6</li>
+<li>error: cannot multiply a string by an integer</li>
+<li><span style='font-weight: bolder'>11<br/>22<br/>33</span></li>
+</ul>
+<p><br/>📌 What is the output of the following?
+for i in range(1,5): if (i!=2): print(i)</p>
+<ul>
+<li><span style='font-weight: bolder'>1<br/>3<br/>4</span></li>
+<li>2</li>
+<li>1<br/>2<br/>3<br/>4</li>
+</ul>
+<p><br/>📌 Consider the class Rectangle, what are the data attributes?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span>width<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span>height <span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span>color<span class="token operator">=</span><span class="token string">'r'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>height<span class="token operator">=</span>height
+        self<span class="token punctuation">.</span>width<span class="token operator">=</span>width
+        self<span class="token punctuation">.</span>color<span class="token operator">=</span>color
+        
+    <span class="token keyword">def</span> <span class="token function">drawRectangle</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+        
+        plt<span class="token punctuation">.</span>gca<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>add_patch<span class="token punctuation">(</span>plt<span class="token punctuation">.</span>Rectangle<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">,</span> self<span class="token punctuation">.</span>width<span class="token punctuation">,</span> self<span class="token punctuation">.</span>height<span class="token punctuation">,</span> fc<span class="token operator">=</span>self<span class="token punctuation">.</span>color<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        plt<span class="token punctuation">.</span>axis<span class="token punctuation">(</span><span class="token string">'scaled'</span><span class="token punctuation">)</span>
+        plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span> </code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>self.height, self.width,self.color</span></li>
+<li>drawRectangle</li>
+<li><strong>init</strong></li>
+</ul>
+<p><br/>📌 What line of code would produce the following: array([0, 0, 0, 0, 0]) ?</p>
+<ul>
+<li>a=np.array([0,1,0,1,0]) b=np.array([1,0,1,0,1]) a-b</li>
+<li><span style='font-weight: bolder'>a=np.array([0,1,0,1,0]) b=np.array([1,0,1,0,1]) a*b</span></li>
+<li>a=np.array([0,1,0,1,0]) b=np.array([1,0,1,0,1]) a+b</li>
+</ul>
+<p><br/>📌 What is the result of the following lines of code?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">a<span class="token operator">=</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> a<span class="token operator">+</span><span class="token number">10</span></code></pre></div>
+<ul>
+<li>array([1,1,1,1,1])</li>
+<li>array([10,10,10,10,10])</li>
+<li><span style='font-weight: bolder'>array([11, 11, 11, 11, 11])</span></li>
+</ul>
+<p><br/>📌 The following line of code selects the columns along with what headers from the dataframe df?</p>
+<div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">y<span class="token operator">=</span>df<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'Artist'</span><span class="token punctuation">,</span><span class="token string">'Length'</span><span class="token punctuation">,</span><span class="token string">'Genre'</span><span class="token punctuation">]</span><span class="token punctuation">]</span></code></pre></div>
+<ul>
+<li><span style='font-weight: bolder'>‘Artist’, ‘Length’ and ‘Genre’</span></li>
+<li>This line of code does not select the headers</li>
+<li>‘Artist’, ‘Length’ and ‘y’</li>
+</ul>
+<p><br/>📌 What is the method readline() used for?</p>
+<ul>
+<li><span style='font-weight: bolder'>It helps to read one complete line from a given text file</span></li>
+<li>It reads the entire file all at once</li>
+<li>It reads 10 lines of a file at a time</li>
+</ul>
+<p><br/>📌 What mode over writes existing text in a file?</p>
+<ul>
+<li><span style='font-weight: bolder'>Write “w”</span></li>
+<li>Read “r”</li>
+<li>Append “a”</li>
+</ul>
+<p><br/>📌 What are the 3 parts to a URL?</p>
+<ul>
+<li>Put, route, and get</li>
+<li><span style='font-weight: bolder'>Scheme, internet address, and route</span></li>
+<li>Get, post, and scheme</li>
+<li>Block, post, and route</li>
+</ul></div><style data-emotion="css hx9xpc">@media (max-width: 768px){.css-hx9xpc{padding:0 20px;}}</style><div class="css-hx9xpc e1gqsjds0"></div><style data-emotion="css 1hxiljc">.css-1hxiljc{display:grid;place-items:center;margin-top:auto;padding:50px 0;font-family:Arial;font-size:15px;text-align:center;line-height:1.5;}@media (max-width: 768px){.css-1hxiljc{font-size:13px;}}</style><footer class="css-1hxiljc e1oae0v80">Thank You for Visiting My Blog, Have a Good Day 😆<br/>© 2021 Ben Kim, Powered By Gatsby.</footer></main></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/IBM_data_science_python_for_data_science_ai_d/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-a000735a40312f7afe11.js"],"app":["/app-de446a2a54f6ef966eff.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-f8327562012af2309154.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-4b0a891a479123874faa.js"],"component---src-pages-info-tsx":["/component---src-pages-info-tsx-8253c7febe95d59a3243.js"],"component---src-templates-post-template-tsx":["/component---src-templates-post-template-tsx-dba291b8d9c28c9493d0.js"]};/*]]>*/</script><script src="/polyfill-a000735a40312f7afe11.js" nomodule=""></script><script src="/component---src-templates-post-template-tsx-dba291b8d9c28c9493d0.js" async=""></script><script src="/d0dcf9c1039535d44ee74defc829dfbf62dac3c5-1e80fc2283b2a8b51ae4.js" async=""></script><script src="/cb1608f2-a2b9d154d9bc2051201f.js" async=""></script><script src="/app-de446a2a54f6ef966eff.js" async=""></script><script src="/framework-c96300279e079ab009d0.js" async=""></script><script src="/webpack-runtime-edb46941e208cfccc3de.js" async=""></script></body></html>
