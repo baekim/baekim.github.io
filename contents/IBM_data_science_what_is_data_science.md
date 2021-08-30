@@ -1,5 +1,5 @@
 ---
-date: '2021-08-09'
+date: '2021-08-10'
 title: '[Coursera] What is Data Science Quiz'
 categories: ['Coursera', 'IBM Professional Certificate', 'Data Science']
 summary: 'What is Data Science Quiz'
