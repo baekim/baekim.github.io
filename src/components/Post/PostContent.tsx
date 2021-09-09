@@ -22,20 +22,18 @@ const MarkdownRenderer = styled.div`
   font-weight: 400;
 
   // Apply Padding Attribute to All Elements
-  p {
+  * {
     font-family: Arial;
-    padding: 3px 0;
   }
 
-  li {
-    font-family: Arial;
+  ul li {
+    list-style: square;
   }
 
   // Adjust Heading Element Style
   h1,
   h2,
   h3 {
-    font-family: Arial;
     font-weight: 800;
     margin-bottom: 10px;
   }
@@ -43,7 +41,7 @@ const MarkdownRenderer = styled.div`
   * + h1,
   * + h2,
   * + h3 {
-    margin-top: 30px;
+    margin-top: 0;
   }
 
   hr + h1,
@@ -69,6 +67,7 @@ const MarkdownRenderer = styled.div`
 
   h4 {
     font-family: Arial;
+    font-size: 16px;
   }
 
   // Adjust Quotation Element Style
@@ -155,7 +154,7 @@ const MarkdownRenderer = styled.div`
   ,
   span {
     font-family: Arial;
-    tab-size: 2;
+    tab-size: 4;
   }
   ,
   .text {
