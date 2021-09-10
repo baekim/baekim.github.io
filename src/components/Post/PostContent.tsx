@@ -135,8 +135,8 @@ const MarkdownRenderer = styled.div`
 
   // Adjust Code Style
   pre[class*='language-'] {
-    margin: 30px 0;
-    padding: 15px;
+    margin: 5px 0 5px 0;
+    padding: 10px 15px 10px 15px;
     font-family: Arial;
     font-size: 15px;
 
