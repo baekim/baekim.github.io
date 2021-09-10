@@ -19,11 +19,12 @@ const MarkdownRenderer = styled.div`
   line-height: 1.8;
   font-family: Arial;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: lighter;
 
   // Apply Padding Attribute to All Elements
   * {
     font-family: Arial;
+    font-weight: lighter;
   }
 
   ul li {
@@ -33,8 +34,9 @@ const MarkdownRenderer = styled.div`
   // Adjust Heading Element Style
   h1,
   h2,
-  h3 {
-    font-weight: 800;
+  h3,
+  h4 {
+    font-weight: 200;
     margin-bottom: 10px;
   }
 
@@ -113,6 +115,7 @@ const MarkdownRenderer = styled.div`
   }
   th {
     font-family: Arial;
+    font-weight: lighter;
     padding: 3px 10px;
     background-color: #d1ecf1;
     border-top: 1px solid black;
@@ -124,6 +127,9 @@ const MarkdownRenderer = styled.div`
     padding: 3px 10px;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
+  }
+  tr:nth-child(2n) {
+    background-color: rgba(192, 192, 192, 0.2);
   }
 
   // Adjust Link Element Style
@@ -159,6 +165,14 @@ const MarkdownRenderer = styled.div`
   ,
   .text {
     font-family: Arial;
+  }
+
+  br {
+    margin: 5px;
+  }
+
+  br + br {
+    margin: 10px;
   }
 
   // Markdown Responsive Design
