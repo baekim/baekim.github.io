@@ -1,12 +1,12 @@
 ---
-date: '2021-08-30'
+date: '2021-08-29'
 title: '[Coursera] Python for Data Science, AI & Development'
 categories: ['Coursera', 'IBM Professional Certificate', 'Data Science']
 summary: 'Python for Data Science, AI & Development Quiz'
 thumbnail: './images/coursera_IBM_data_science.png'
 ---
 
-### Quiz
+## Quiz
 
 <br/>📌 What is the result of the following operation:
 

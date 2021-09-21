@@ -1,12 +1,12 @@
 ---
-date: '2021-08-10'
+date: '2021-08-07'
 title: '[Coursera] What is Data Science Quiz'
 categories: ['Coursera', 'IBM Professional Certificate', 'Data Science']
 summary: 'What is Data Science Quiz'
 thumbnail: './images/coursera_IBM_data_science.png'
 ---
 
-### Final Quiz
+## Final Quiz
 
 📌 How is Walmart reported to have addressed its analytical needs?
 

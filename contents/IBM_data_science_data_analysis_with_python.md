@@ -1,5 +1,5 @@
 ---
-date: '2021-09-10'
+date: '2021-09-12'
 title: '[Coursera] Data Analysis with Python Quiz'
 categories: ['Coursera', 'IBM Professional Certificate', 'Data Science']
 summary: 'Data Analysis with Python Quiz'

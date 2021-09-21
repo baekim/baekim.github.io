@@ -1,12 +1,12 @@
 ---
-date: '2021-08-20'
+date: '2021-08-22'
 title: '[Coursera] Data Science Methodology Quiz'
 categories: ['Coursera', 'IBM Professional Certificate', 'Data Science']
 summary: 'Data Science Methodology Quiz'
 thumbnail: './images/coursera_IBM_data_science.png'
 ---
 
-### Quiz
+## Quiz
 
 <br/>📌 The first stage of the data science methodology is Data Understanding.
 

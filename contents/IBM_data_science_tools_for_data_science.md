@@ -6,7 +6,7 @@ summary: 'Tools for Data Science Quiz'
 thumbnail: './images/coursera_IBM_data_science.png'
 ---
 
-### Final Quiz
+## Final Quiz
 
 📌 SQL is what type of query language?
 
