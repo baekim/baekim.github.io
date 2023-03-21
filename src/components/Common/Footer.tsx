@@ -19,8 +19,8 @@ const FooterWrapper = styled.footer`
 const Footer: FunctionComponent = function () {
   return (
     <FooterWrapper>
-      Thank You for Visiting My Blog, Have a Good Day 😆
-      <br />© 2021 Bae Kim, Powered By Gatsby.
+      Have a good day! 😆
+      <br />© 2023 Bae Kim, Powered By Gatsby.
     </FooterWrapper>
   );
 };
