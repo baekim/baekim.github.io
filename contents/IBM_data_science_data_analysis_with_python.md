@@ -8,7 +8,7 @@ thumbnail: './images/coursera_IBM_data_science.png'
 
 ## Quiz
 
-📌 Each column contains a:
+<br/>📌 Each column contains a:
 
 - <span style='color: red'>attribute or feature</span>
 - different used car
