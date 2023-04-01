@@ -86,5 +86,19 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-gtag`,
+    //   options: {
+    //     trackingId: `GTM-K867J22`,
+    //     head: true,
+    //   },
+    // },
+    {
+      resolve: `gatsby-plugin-google-tagmanager`,
+      options: {
+        id: "GTM-K867J22",
+        includeInDevelopment: true
+      },
+    },
   ],
 };

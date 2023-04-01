@@ -17,7 +17,6 @@ const Container = styled.main`
   flex-direction: column;
   height: 100%;
 `;
-
 const Template: FunctionComponent<TemplateProps> = function ({
     title,
     description,
@@ -59,7 +58,7 @@ const Template: FunctionComponent<TemplateProps> = function ({
             <GlobalStyle />
             {children}
             <Footer />
-        </Container>
+        </Container >
     );
 };
 
