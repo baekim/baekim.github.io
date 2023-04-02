@@ -51,6 +51,8 @@ const Template: FunctionComponent<TemplateProps> = function ({
                     name="google-site-verification"
                     content="OaO6k-mksvth1OeDhL3fgi_T17XLIfilxc5YENgPzdI"
                 />
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6475766542333726"
+                    crossorigin="anonymous"></script>
 
                 <html lang="ko" />
             </Helmet>
